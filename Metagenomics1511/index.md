@@ -25,15 +25,15 @@ Held in Uppsala November 24-25, 2015.
 
 ## Helpful Things
 
-[Linux cheat sheet](files/linux-cheat-sheet.pdf)
+[Linux cheat sheet](../common/images/linux-cheat-sheet.pdf)
 
-[UPPMAX cheat sheet](files/uppmax-cheat-sheet.png)
+[UPPMAX cheat sheet](../common/images/uppmax-cheat-sheet.png)
 
 [How to create a webexport in your project](https://www.uppmax.uu.se/webexport-guide)
 
 ## External Resources
 
-Mac keyboard layouts
+[Mac keyboard layouts](../common/mac-keyboard)
 
 [IGV (Integrative Genomics Viewer) Home](https://www.broadinstitute.org/igv/)  
 
