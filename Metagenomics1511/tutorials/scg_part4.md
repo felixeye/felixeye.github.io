@@ -9,13 +9,11 @@ As explained during the lectures, the genome amplification process (MDA) results
 Here you will have a look at the 'best' assembly that you managed to obtain, and try to assess the level of bias and chimera formation.
 In order to visualize how the coverage a normal single-cell assembly, you need to map your reads used in the assembly, back to your assembled contigs. 
 This can be done with various read-mappers such as bwa, bowtie, gsnap etc. You will be using bwa since it is fast and it can also map partial reads back to our reference.
-Make a folder called 'coverage_mapping' in the 'metagenomics_exercises' folder. 
-
+Make a folder called 'coverage_mapping' in the 'metagenomics_exercises' folder.  
 Copy the contigs file from an example run:
 ```sh
 cp /proj/g2014180/nobackup/single_cell_exercises/assembly_examples/contigs.fasta .
 ```
-
 First you need to create an index for your contigs:
 ```sh
 module load bioinfo-tools
@@ -24,8 +22,7 @@ bwa index contigs.fasta #[time to run: < 1 sec]
 ```
 
 This should produce 5 more files in your directory called contigs.fasta.[amb|ann|bwt|pac|sa]. 
-Make sure you know where the fastq files are, in this example the location is in a directory above current location, modify '../' if needed. 
-
+Make sure you know where the fastq files are, in this example the location is in a directory above current location, modify '../' if needed.  
 Then map your reads back to your contigs:
 ```sh
 bwa mem -t 8 contigs.fasta ../spades_assemblies/G5_Hiseq_1.fastq ../spades_assemblies/G5_Hiseq_2.fastq > G5_vs_contigs.sam [time to run: 2.5 sec]
@@ -37,19 +34,16 @@ To do this, and to do some additional manipulations to the mapped reads, you wil
 module load picard/1.92
 java -jar /sw/apps/bioinfo/picard/1.92/milou/SamFormatConverter.jar INPUT=G5_vs_contigs.sam OUTPUT=G5_vs_contigs.bam [time to run: 13 sec]
 ```
-
 We can now safely remove our original SAM file in order to save space
 ```sh
 rm G5_vs_contigs.sam
 ```
-
 The BAM file (Binary Alignment/Map) is, as the name implies, a binary file, and can therefor not be viewed with normal tools such as less or more. 
 If you still want to see the file as plain text, you can use picard-tools ViewSam. 
 This tool prints the whole file to the screen. For easier viewing, pipe the output to 'less'.
 ```sh
 java -jar /sw/apps/bioinfo/picard/1.92/milou/ViewSam.jar INPUT=G5_vs_contigs.bam | less
 ```
-
 If you want to know more about SAM files, have a look at http://samtools.sourceforge.net/SAMv1.pdf. 
 Especially section 1.4 is helpful for understanding the different columns. 
 In order to more easily make sense of the information in the alignment file, you should sort it. 
@@ -59,7 +53,6 @@ Or to put it another way, with increasing coordinates. This can be achieved by u
 ```sh
 java -jar /sw/apps/bioinfo/picard/1.92/milou/SortSam.jar INPUT=G5_vs_contigs.bam OUTPUT=G5_vs_contigs_sorted.bam SORT_ORDER=coordinate #[time to run: 25 sec]
 ```
-
 If you now view the sorted bam file with *ViewSam.jar*, you will see that the contigs appear in order after each other.
 
 ## 4.1 Assessing coverage bias in Artemis
@@ -153,15 +146,15 @@ java -jar /sw/apps/bioinfo/picard/1.92/milou/CollectInsertSizeMetrics.jar HISTOG
 You can inspect the insert size distribution by opening the pdf file in firefox.
 ```sh
 firefox G5_vs_contigs_inssizePlot.pdf
-or Okular.
+#or Okular.
 okular G5_vs_contigs_inssizePlot.pdf
 ```
 
-## Questions
+### Questions
 ---
 
-**Q4.1** What was the highest coverage for any of your contigs?
-**Q4.2** Do you think that the completeness of your SC genome will improve with more sequence data? Why? Will your genome ever be ‘complete’?
-**Q4.3** How would you explain the coverage patterns you can see on the contigs called NODE_7 and NODE_4.
-**Q4.4** How many chimeric reads did you find in your original dataset? Do you think this value is a true representation of the total amount of chimeras?
-**Q4.5** What was the average insert size in this dataset?
+**Q4.1** What was the highest coverage for any of your contigs?  
+**Q4.2** Do you think that the completeness of your SC genome will improve with more sequence data? Why? Will your genome ever be ‘complete’?  
+**Q4.3** How would you explain the coverage patterns you can see on the contigs called NODE_7 and NODE_4.  
+**Q4.4** How many chimeric reads did you find in your original dataset? Do you think this value is a true representation of the total amount of chimeras?  
+**Q4.5** What was the average insert size in this dataset?  

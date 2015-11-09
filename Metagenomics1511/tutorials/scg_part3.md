@@ -10,9 +10,10 @@ The idea is that you will be exploring how different settings of SPAdes and diff
 Below you will find a table in which different settings are indicated for running SPAdes (different 'flags' and datasets trimming).
 Given that assembly is relatively time-consuming (even with the reduced datasets used here during the tutorial), we suggest that you distribute the different assemblies amongst different groups to save time. 
 There are a total of 12 SPAdes assemblies to run in this exercise and it would be good to form a group of 4 people and each can take care of 3 assemblies. 
-If you can complete these 12 assemblies and have time remaining, you can do Part 7 as a bonus exercise. Note that Part 6 is for running assemblies using MiSeq data.
+If you can complete these 12 assemblies and have time remaining, you can do Part 7 as a bonus exercise.  
 
-Note that you will have to fill in the results from the exercises in Tables 1 to 4:
+Note that Part 6 is for running assemblies using MiSeq data.  
+Note that you will have to fill in the results from the exercises in Tables 1 to 4:  
 
 Table 1
 
@@ -27,14 +28,14 @@ Actual tables to be filled in are provided in Google Docs and the links can be f
 Note that each group will consist of 4 people except Group 8 which will consist of 3 people. 
 You should talk to each other to form the groups and make sure that you work in groups to discuss who will work on which assembly.
 
-[Group 1:](https://docs.google.com/spreadsheet/ccc?key=0AuNHyFPCsxthdGRKMXJwdF9jVDMzX2lGMkdJSDdOcnc&usp=sharing)
-[Group 2:](https://docs.google.com/spreadsheet/ccc?key=0AuNHyFPCsxthdC0tdzFySDFyaDNIdEh4M01xMXFQb3c&usp=sharing)
-[Group 3:](https://docs.google.com/spreadsheet/ccc?key=0AuNHyFPCsxthdHhwdUdUWUxBbnd0eC15WkJhS29iV3c&usp=sharing)
-[Group 4:](https://docs.google.com/spreadsheet/ccc?key=0AuNHyFPCsxthdFZRcXBjN0lrMGV5NmNuRnUzV2RkT0E&usp=sharing)
-[Group 5:](https://docs.google.com/spreadsheet/ccc?key=0AuNHyFPCsxthdEhkV3hIejJaMDZrWDFqd29XNTZFbmc&usp=sharing)
-[Group 6:](https://docs.google.com/spreadsheet/ccc?key=0AuNHyFPCsxthdFZDQzhLamJocHI0M0ZBQ0dMUDRrSFE&usp=sharing)
-[Group 7:](https://docs.google.com/spreadsheet/ccc?key=0AuNHyFPCsxthdDU2OUk4ank4c1A1VVhhbjZPaldtN2c&usp=sharing)
-[Group 8:](https://docs.google.com/spreadsheets/d/1Q3QBvPYzQ1kFHjWu0O5Jf1wgSH-9sxMrcndoLlNW92Y/edit?usp=sharing)
+[Group 1:](https://docs.google.com/spreadsheet/ccc?key=0AuNHyFPCsxthdGRKMXJwdF9jVDMzX2lGMkdJSDdOcnc&usp=sharing)  
+[Group 2:](https://docs.google.com/spreadsheet/ccc?key=0AuNHyFPCsxthdC0tdzFySDFyaDNIdEh4M01xMXFQb3c&usp=sharing)  
+[Group 3:](https://docs.google.com/spreadsheet/ccc?key=0AuNHyFPCsxthdHhwdUdUWUxBbnd0eC15WkJhS29iV3c&usp=sharing)  
+[Group 4:](https://docs.google.com/spreadsheet/ccc?key=0AuNHyFPCsxthdFZRcXBjN0lrMGV5NmNuRnUzV2RkT0E&usp=sharing)  
+[Group 5:](https://docs.google.com/spreadsheet/ccc?key=0AuNHyFPCsxthdEhkV3hIejJaMDZrWDFqd29XNTZFbmc&usp=sharing)  
+[Group 6:](https://docs.google.com/spreadsheet/ccc?key=0AuNHyFPCsxthdFZDQzhLamJocHI0M0ZBQ0dMUDRrSFE&usp=sharing)  
+[Group 7:](https://docs.google.com/spreadsheet/ccc?key=0AuNHyFPCsxthdDU2OUk4ank4c1A1VVhhbjZPaldtN2c&usp=sharing)  
+[Group 8:](https://docs.google.com/spreadsheets/d/1Q3QBvPYzQ1kFHjWu0O5Jf1wgSH-9sxMrcndoLlNW92Y/edit?usp=sharing)  
 
 
 ## 3.1a. Running SPAdes on untrimmed sequences
@@ -163,9 +164,9 @@ module load rnammer/1.2
 rnammer -S bac -m lsu,ssu,tsu -gff contigs.rnammer.gff -f contigs.rnammer.fasta < contigs.fasta
 ```
 
-Take a look at the file (*'contigs.rnammer.gff'*) produced by 'rnammer'. 
-Can you identify the positive matches predicted by 'rnammer'? 
-Can you interpret the result output? 
+Take a look at the file (*'contigs.rnammer.gff'*) produced by 'rnammer'.  
+Can you identify the positive matches predicted by 'rnammer'?  
+Can you interpret the result output?  
 Next, you will run 'blastn' against the 'Silva' database. Depending on whether or not you have identified 16S or 23S sequences, you will need to run 'blastn' on a different database.
 First, load the Blast module:
 ```sh
@@ -205,7 +206,6 @@ perl /proj/g2014180/nobackup/single_cell_exercises/scripts/micomplete.pl -h /pro
 If the script completed without any errors, you should see that the script printed something like this:
 
 Completeness: ??
-
 N markers found: ?? out of 139
 
 The script looks for unique marker genes that are present in single copies in most bacteria and estimates how complete the genome is based on the marker genes found. Completeness is shown as fractions and you should multiply this with 100 to get the percentage completeness.
@@ -214,13 +214,13 @@ The script looks for unique marker genes that are present in single copies in mo
 ## Questions:
 ---
 
-**Q3.1:** Did you notice how many read pairs from HiSeq or MiSeq data were merged by SeqPrep? Is there a reason why a certain data set has higher merge rates than the other? How many reads were discarded in the process?
-**Q3.2:** Did you notice any differences between HiSeq and MiSeq data assembled using both --sc and --careful flags, i.e., default?
-**Q3.3:** Did you notice any differences in the quality of assembly when --sc and --careful were omitted in each data set?
-**Q3.4:** What do you think is the best way to assess the 'quality' of an assembly? (e.g. total size, N50, number of predicted ORFs, completeness)
-**Q3.5:** What do you think is the best way to assemble this particular SC dataset? Why?
-**Q3.6:** What is the identity of the organism based on the analyses you have performed? What phylum does it belong to and is there any closely related organisms in the databases?
-**Q3.7:** Try to find out in what type of environment you might find similar organisms in.
+**Q3.1:** Did you notice how many read pairs from HiSeq or MiSeq data were merged by SeqPrep? Is there a reason why a certain data set has higher merge rates than the other? How many reads were discarded in the process?  
+**Q3.2:** Did you notice any differences between HiSeq and MiSeq data assembled using both --sc and --careful flags, i.e., default?  
+**Q3.3:** Did you notice any differences in the quality of assembly when --sc and --careful were omitted in each data set?  
+**Q3.4:** What do you think is the best way to assess the 'quality' of an assembly? (e.g. total size, N50, number of predicted ORFs, completeness)  
+**Q3.5:** What do you think is the best way to assemble this particular SC dataset? Why?  
+**Q3.6:** What is the identity of the organism based on the analyses you have performed? What phylum does it belong to and is there any closely related organisms in the databases?  
+**Q3.7:** Try to find out in what type of environment you might find similar organisms in  .
 
 Note: If you are ahead of time and have completed the exercises (and have plenty of time) you can start doing Part 6, which is similar to this exercise but using MiSeq data.
 

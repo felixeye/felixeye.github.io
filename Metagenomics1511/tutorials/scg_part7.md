@@ -106,12 +106,8 @@ Table 6
 ### Questions
 ---
 
-**Q7.1** Did you notice the major differences between the two assemblies (untrimmed reads)? What about the differences between two assemblies for trimmed reads?
-
-**Q7.2** What do you think happened by setting a longer k-mer sizes than default settings?
-
-**Q7.3** Do you think the number of reads are enough to obtain a good assembly or if more sequences should be obtained?
-
-**Q7.4** What is the taxonomic affiliation of the SAG?
-
-**Q7.5** Can you say anything about the metabolism based on the assembled data?
+**Q7.1** Did you notice the major differences between the two assemblies (untrimmed reads)? What about the differences between two assemblies for trimmed reads?  
+**Q7.2** What do you think happened by setting a longer k-mer sizes than default settings?  
+**Q7.3** Do you think the number of reads are enough to obtain a good assembly or if more sequences should be obtained?  
+**Q7.4** What is the taxonomic affiliation of the SAG?  
+**Q7.5** Can you say anything about the metabolism based on the assembled data?  

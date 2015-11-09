@@ -18,20 +18,15 @@ You can chose to work with the latter dataset if you happen to have some extra t
 
 ### Exercises are split into 2 sessions:
 
-*Session 1*
+**Session 1**
 
 1. [Connecting to UPPMAX](tutorials/connectToUppmax)
+2. [Familiarizing with data](tutorials/scg_part2)
+3. [Single-cell genome assembly using SPAdes (HiSeq data)](tutorials/scg_part3)
 
-2. Familiarizing with data
+**Session 2**
 
-3. Single-cell genome assembly using SPAdes (HiSeq data)
-
-*Session 2*
-
-4. Assessing read coverage and chimera checking
-
-5. Checking for contaminants
-
-6. Single-cell genome assembly using SPAdes (MiSeq data) and comparison between HiSeq vs. MiSeq data
-
-7. Analysis of a novel single-cell genome (bonus exercise)
+4. [Assessing read coverage and chimera checking](tutorials/scg_part4)
+5. [Checking for contaminants](tutorials/scg_part5)
+6. [Single-cell genome assembly using SPAdes (MiSeq data) and comparison between HiSeq vs. MiSeq data](tutorials/scg_part6)
+7. [Analysis of a novel single-cell genome (bonus exercise)](tutorials/scg_part7)

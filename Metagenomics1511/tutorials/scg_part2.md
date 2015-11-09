@@ -9,12 +9,12 @@ It is important to be able to recognize what sequence data looks like and how to
 The files provided for your analysis are in Fastq format, and these are so-called ‘raw reads’. 
 Look into the directory where the data files are located. For example, dataset 1.
 
-```bash
+```sh
 ls /proj/g2014180/nobackup/single_cell_exercises/sequences/dataset1/
 ```
 
 Take a look at what Fastq format looks like.
-```bash
+```sh
 less /proj/g2014180/nobackup/single_cell_exercises/sequences/dataset1/G5_Hiseq_1.fastq
 ```
 
@@ -27,7 +27,7 @@ HiSeq 2000 read pairs are named as *G5_Hiseq_1.fastq* and *G5_Hiseq_2.fastq* and
 MiSeq read pairs are named as *G5_Miseq_1.fastq* and *G5_Miseq_2.fastq*. 
 For example, to count the reads from the HiSeq data set, type:
 
-```bash
+```sh
 grep -c -e "^@HWI" /proj/g2014180/nobackup/single_cell_exercises/sequences/dataset1/G5_Hiseq_1.fastq
 ```
 
@@ -38,20 +38,20 @@ Count how many reads there are in the first Fastq file. Do the same for the seco
 Fill in the table provided below (provided as links to Google Docs spreadsheets) with the number of reads for the data set. 
 Can you see the differences in the read pair files? Type:
 
-```bash
+```sh
 grep -e "^@HWI" /proj/g2014180/nobackup/single_cell_exercises/sequences/dataset1/G5_Hiseq_1.fastq | head
 ```
 
 and then type:
 
-```bash
+```sh
 grep -e "^@HWI" /proj/g2014180/nobackup/single_cell_exercises/sequences/dataset1/G5_Hiseq_2.fastq | head
 ```
 
 These commands print the first 10 lines from the grep search command. Do you notice the similarities and differences between the *_1.fastq* and *_2.fastq* files? 
 Next, to count the number of sequences in MiSeq data, type:
 
-```bash
+```sh
 grep -c -e "^@MISEQ" /proj/g2014180/nobackup/single_cell_exercises/sequences/dataset2/G5_Miseq_1.fastq
 ```
 
@@ -59,11 +59,13 @@ MiSeq instrument produces different Fastq headers from HiSeq instrument and the 
 Do the same for the second MiSeq Fastq file. Enter the total number of reads for the MiSeq data set in the table. 
 Add the count of each read pair to get the total number.
 
-## Questions:
+### Questions:
 ---
-__Q2.1:__ Looking at a fastq file, can you tell a repeating pattern in the file? Do you notice any unique characters or strings that would help you identify where a read begins and ends?
-__Q2.2:__ Did you notice anything similar in the Fastq headers of the two read pairs? And differences? How can you identify paired-end reads?
-__Q2.3:__ Did you see where the actual DNA sequences are? Can you count how long the DNA sequences are? A quick example command to count the length of a DNA sequence:
-```bash
+
+__Q2.1:__ Looking at a fastq file, can you tell a repeating pattern in the file? Do you notice any unique characters or strings that would help you identify where a read begins and ends?  
+__Q2.2:__ Did you notice anything similar in the Fastq headers of the two read pairs? And differences? How can you identify paired-end reads?  
+__Q2.3:__ Did you see where the actual DNA sequences are? Can you count how long the DNA sequences are?  
+A quick example command to count the length of a DNA sequence:
+```bsh
 echo "ACGTACGT" | awk '{print length($1)}'
-``
+```
