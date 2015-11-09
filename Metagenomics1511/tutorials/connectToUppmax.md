@@ -12,54 +12,52 @@ You will be using half a node (8 cores) per person. This means you will end up s
 
 It is essential to log in with X forwarding (-X) option to be able to display graphical interfaces across remote computers.
 Type the following command but replace *username* with your login name.
-```
-#!bash
-ssh -X username@milou.uppmax.uu.se
+```bash
+ssh -X *username*@milou.uppmax.uu.se
 ```
 
 Next, request a compute node. Note that the reservation code for Wednesday is g2014179_wed.
-```
-#!bash
+```bash
 salloc -A g2014180 -t 08:00:00 -p core -n 8 --no-shell --qos=interact &
 ```
 
 Do not repeat this command. Just type it once and see which node you are assigned to.Type the following command to see the login node:
-```
-#!bash
-jobinfo -u username
+```bash
+jobinfo -u *username*
 ```
 or this command:
-```
-#!bash
-squeue -u username
+```bash
+squeue -u *username*
 ```
 
-The nodelist column gives you the name of the node that has been reserved for you (starts with 'q'). Log in to compute node (replace mXX with the actual compute node you are assigned to)
-```
-#!bash
+The nodelist column gives you the name of the node that has been reserved for you (starts with 'q'). 
+Log in to compute node (replace mXX with the actual compute node you are assigned to)
+```bash
 ssh -X mXX
 ```
 Make sure that you can launch graphical tools in your node by typing this command:
-```
-#!bash
+```bash
 xclock
 ```
 
 If you see the clock then you should be able to launch GUI-based tools such as MEGAN or Artemis remotely. Close the clock.
 Next, before you are able to use a specific bioinformatics tool it needs to be first loaded using the 'module load' command. 
 For example, You can view the list of available modules by typing:
-```
-#!bash
+
+```bash
 module avail
 ```
-This will list all the basic tools available but you won't see any bioinformatics tools available. Type q to return to the command prompt. To see the bioinformatics tools installed on Milou, type:
-```
-#!bash
+
+This will list all the basic tools available but you won't see any bioinformatics tools available. 
+Type q to return to the command prompt. To see the bioinformatics tools installed on Milou, type:
+
+```bash
 module load bioinfo-tools
 ```
+
 Then type:
-```
-#!bash
+
+```bash
 module avail
 ```
 

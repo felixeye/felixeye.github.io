@@ -1,9 +1,9 @@
 ---
 layout: default
-title:  'Single Cell Genomics Tutorial (1 - 3)'
+title:  'Single Cell Genomics Tutorial'
 ---
 
-# Introduction: Single Cell Genomics Tutorial (1 - 3)
+# Introduction: Single Cell Genomics Tutorial
 
 Single cell genomics is an emerging technology that allows one to explore the genome sequence of individual cells. 
 During this tutorial you will work with real single cell genome data from a single cell that was isolated from a hot spring in Yellowstone National Park (USA). 
@@ -11,7 +11,7 @@ The data you will work with is part of a larger project ('PUZZLE_CELL') that aim
 The data that you will work with is paired-end Illumina reads. 
 We have chosen to have you work with both HiSeq (2x100 bp - dataset 1) and MiSeq (2x250 bp - dataset 2) datasets. 
 Both datasets were generated from the same single cell, hence allowing you to develop a feeling for what you might want to used in any potential future SCG project. 
-In addition, there is a third MiSeq dataset (2*250 bp - dataset 3) that contains a completely new organism, which might be a bit more challenging to work with. 
+In addition, there is a third MiSeq dataset (2x250 bp - dataset 3) that contains a completely new organism, which might be a bit more challenging to work with. 
 You can chose to work with the latter dataset if you happen to have some extra time at the end of the tutorial.
 
 ## Overview of steps in this exercise
@@ -19,11 +19,19 @@ You can chose to work with the latter dataset if you happen to have some extra t
 ### Exercises are split into 2 sessions:
 
 *Session 1*
-1. Connecting to UPPMAX
+
+1. [Connecting to UPPMAX](tutorials/connectToUppmax)
+
 2. Familiarizing with data
+
 3. Single-cell genome assembly using SPAdes (HiSeq data)
+
 *Session 2*
+
 4. Assessing read coverage and chimera checking
+
 5. Checking for contaminants
+
 6. Single-cell genome assembly using SPAdes (MiSeq data) and comparison between HiSeq vs. MiSeq data
+
 7. Analysis of a novel single-cell genome (bonus exercise)
