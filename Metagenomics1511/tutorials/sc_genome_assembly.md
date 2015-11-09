@@ -20,13 +20,13 @@ You can chose to work with the latter dataset if you happen to have some extra t
 
 **Session 1**
 
-1. [Connecting to UPPMAX](tutorials/connectToUppmax)
-2. [Familiarizing with data](tutorials/scg_part2)
-3. [Single-cell genome assembly using SPAdes (HiSeq data)](tutorials/scg_part3)
+1. [Connecting to UPPMAX](connectToUppmax)
+2. [Familiarizing with data](scg_part2)
+3. [Single-cell genome assembly using SPAdes (HiSeq data)](scg_part3)
 
 **Session 2**
 
-4. [Assessing read coverage and chimera checking](tutorials/scg_part4)
-5. [Checking for contaminants](tutorials/scg_part5)
-6. [Single-cell genome assembly using SPAdes (MiSeq data) and comparison between HiSeq vs. MiSeq data](tutorials/scg_part6)
-7. [Analysis of a novel single-cell genome (bonus exercise)](tutorials/scg_part7)
+4. [Assessing read coverage and chimera checking](scg_part4)
+5. [Checking for contaminants](scg_part5)
+6. [Single-cell genome assembly using SPAdes (MiSeq data) and comparison between HiSeq vs. MiSeq data](scg_part6)
+7. [Analysis of a novel single-cell genome (bonus exercise)](scg_part7)
