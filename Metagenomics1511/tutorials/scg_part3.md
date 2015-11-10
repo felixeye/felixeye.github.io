@@ -14,7 +14,7 @@ If you can complete these 12 assemblies and have time remaining, you can do Part
 
 Note that Part 6 is for running assemblies using MiSeq data.  
 Note that you will have to fill in the results from the exercises in Tables 1 to 4:  
-
+<p>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;border-color:#999;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}
@@ -91,7 +91,10 @@ Note that you will have to fill in the results from the exercises in Tables 1 to
     <td class="tg-baqh">-</td>
   </tr>
 </table>
+</p>
 
+
+<p>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;border-color:#999;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}
@@ -168,7 +171,10 @@ Note that you will have to fill in the results from the exercises in Tables 1 to
     <td class="tg-baqh">-</td>
   </tr>
 </table>
+</p>
 
+
+<p>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;border-color:#999;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}
@@ -245,7 +251,10 @@ Note that you will have to fill in the results from the exercises in Tables 1 to
     <td class="tg-baqh">-</td>
   </tr>
 </table>
+</p>
 
+
+<p>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;border-color:#999;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}
@@ -258,7 +267,7 @@ Note that you will have to fill in the results from the exercises in Tables 1 to
 </style>
 <table class="tg">
   <tr>
-    <th class="tg-amwm">Table 2</th>
+    <th class="tg-amwm">Table 4</th>
     <th class="tg-7un6" colspan="3">MiSeq data - Processed with SeqPrep</th>
   </tr>
   <tr>
@@ -322,6 +331,7 @@ Note that you will have to fill in the results from the exercises in Tables 1 to
     <td class="tg-baqh">-</td>
   </tr>
 </table>
+</p>
 
 
 Actual tables to be filled in are provided in Google Docs and the links can be found below. 
@@ -351,6 +361,7 @@ cd ~/metagenomics_exercises/
 ```
 
 Make a folder for SPAdes assemblies: 
+
 ```sh
 mkdir spades_assemblies
 cd spades_assemblies
@@ -365,7 +376,7 @@ ln -s /proj/g2014180/nobackup/single_cell_exercises/sequences/dataset2/G5_Miseq_
 #ln -s /proj/g2014180/nobackup/single_cell_exercises/sequences/dataset2/G5_Miseq_2.fastq G5_Miseq_2.fastq
 ```
 
-Now you are almost ready to run assemblies! But before you can start assemblies, you need to load SPAdes module first.
+Now you are almost ready to run assemblies! But before you can start assemblies, you need to load SPAdes module first.  
 To load the SPAdes assembler, type:
 
 ```sh
@@ -391,6 +402,7 @@ In order for SPAdes to be able to handle biased sequence coverage, you need to s
 In this exercise, you will omit the *'--sc'* flag to see how this affects the assembly. You should be able to compare results between assemblies with or without *'--sc'* flag. 
 
 Type the following command:
+
 ```sh
 time spades.py --careful -t 8 -m 24 -1 G5_Hiseq_1.fastq -2 G5_Hiseq_2.fastq -o G5_Hiseq_careful
 ```
@@ -407,14 +419,16 @@ Follow previous examples to get the assembly metrics and tabulate the results. N
 ## 3.1d. Merging reads with SeqPrep
 ---
 To merge read pairs that have significant overlaps, we will use the tool called *'SeqPrep'*. First, load the module.
+
 ```sh
 module load SeqPrep/2013-11-14
 SeqPrep -f G5_Hiseq_1.fastq -r G5_Hiseq_2.fastq -1 G5_Hiseq_merge_1.fastq.gz -2 G5_Hiseq_merge_2.fastq.gz -s G5_Hiseq_merged.fastq.gz -q 30
 ```
 
 Note that SeqPrep merges read pairs if overlaps between the read pairs are identified. Quality threshold of 30, for example, can be specified by '-q 30' flag 
-for overlaps with some mismatches to be counted. It can also remove adapter sequences optionally. 
+for overlaps with some mismatches to be counted. It can also remove adapter sequences optionally.  
 To run SPAdes assembly using merged reads, type the following command:
+
 ```sh
 time spades.py --sc --careful -1 G5_Hiseq_merge_1.fastq.gz -2 G5_Hiseq_merge_2.fastq.gz -s G5_Hiseq_merged.fastq.gz -t 8 -m 24 -o G5_Hiseq_SeqPrep_sc_careful
 ```
@@ -425,8 +439,9 @@ Name the next two assemblies as G5_Hiseq_SeqPrep_sc and G5_Hiseq_SeqPrep_careful
 ## 3.2. Assessing assembly quality using Quast
 ---
 
-After the assembly runs are done, you will use this tool called 'Quast' to calculate the basic metrics such as the length of largest contig, N50, etc. 
-To run 'Quast', first go to the assembly directory and type the following commands:
+After the assembly runs are done, you will use this tool called 'Quast' to calculate the basic metrics such as the length of largest contig, N50, etc.  
+To run 'Quast', first go to the assembly directory and type the following commands:  
+
 ```sh
 module load quast/2.3
 quast.py -o assembly_metrics contigs.fasta
@@ -439,13 +454,16 @@ Repeat Quast for the rest of the assemblies. Tabulate the results.
 ## 3.3. Gene prediction using Prodigal
 ---
 
-Prodigal is a tool that can identify open reading frames (ORFs) in microbial genomes (bacteria or archaea). In this exercise, you will learn how to use Prodigal to predict ORFs and to prepare them for running Blastp later. 
-Type the following commands to run Prodigal:
+Prodigal is a tool that can identify open reading frames (ORFs) in microbial genomes (bacteria or archaea). 
+In this exercise, you will learn how to use Prodigal to predict ORFs and to prepare them for running Blastp later.  
+Type the following commands to run Prodigal:  
+
 ```sh
 module load prodigal/2.60
 ```
 
-Go into a specific assembly folder (for example G5_Hiseq_careful_sc) and run:
+Go into a specific assembly folder (for example G5_Hiseq_careful_sc) and run:  
+
 ```sh
 prodigal -i contigs.fasta -a contigs.prodigal.faa -o contigs.prodigal.gff
 ```
@@ -457,8 +475,9 @@ Tabulate the results.
 ## 3.4. Identifying your cell
 ---
 
-First, you will run this tool called 'rnammer' to predict the regions within assembled contigs that contain ribosomal RNA sequences (rRNA), such as 16S, 23S, and 5S rRNA sequences. 
-Go into the folder containing the assembled contigs and type this command:
+First, you will run this tool called 'rnammer' to predict the regions within assembled contigs that contain ribosomal RNA sequences (rRNA), such as 16S, 23S, and 5S rRNA sequences.  
+Go into the folder containing the assembled contigs and type this command:  
+
 ```sh
 module load rnammer/1.2
 rnammer -S bac -m lsu,ssu,tsu -gff contigs.rnammer.gff -f contigs.rnammer.fasta < contigs.fasta
@@ -467,18 +486,22 @@ rnammer -S bac -m lsu,ssu,tsu -gff contigs.rnammer.gff -f contigs.rnammer.fasta 
 Take a look at the file (*'contigs.rnammer.gff'*) produced by 'rnammer'.  
 Can you identify the positive matches predicted by 'rnammer'?  
 Can you interpret the result output?  
-Next, you will run 'blastn' against the 'Silva' database. Depending on whether or not you have identified 16S or 23S sequences, you will need to run 'blastn' on a different database.
+Next, you will run 'blastn' against the 'Silva' database. 
+Depending on whether or not you have identified 16S or 23S sequences, you will need to run 'blastn' on a different database.  
 First, load the Blast module:
+
 ```sh
 module load blast/2.2.29+
 ```
 
 If you have identified a 16S rRNA sequence (check the gff file), type:
+
 ```sh
 blastn -query contigs.rnammer.fasta -db /proj/g2014180/nobackup/single_cell_exercises/databases/SSURef_NR99_115_tax_silva_trunc.dna.fasta -evalue 1e-6 -num_threads 8 -out contigs.rnammer.16S_silva.blastn
 ```
 
 If you have identified 23S rRNA sequence, then type:
+
 ```sh
 blastn -query contigs.rnammer.fasta -db /proj/g2014180/nobackup/single_cell_exercises/databases/LSURef_115_tax_silva_trunc.dna.fasta -evalue 1e-6 -num_threads 8 -out contigs.rnammer.23S_silva.blastn
 ```
@@ -493,12 +516,14 @@ Based on how many of these genes will be identified, an estimation of genome com
 
 First, load the correct version of HMMER needed for this analysis:
 You will need to unload the older version of HMMER that was loaded with rnammer program as the script you will use in this part requires the latest version of HMMER.
+
 ```sh
 module unload hmmer/2.3.2-gcc
 module load hmmer/3.1b1-gcc
 ```
 
 Then go into the assembly directory and run the following perl script:
+
 ```sh
 perl /proj/g2014180/nobackup/single_cell_exercises/scripts/micomplete.pl -h /proj/g2014180/nobackup/single_cell_exercises/scripts/Bact139.hmm -w /proj/g2014180/nobackup/single_cell_exercises/scripts/Bact139.weights -p contigs.prodigal.faa -t 8 -e -c 1e-10
 ```

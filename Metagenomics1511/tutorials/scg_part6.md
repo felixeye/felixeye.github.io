@@ -8,7 +8,7 @@ title:  'Part 6: Comparing MiSeq vs. HiSeq data'
 
 Thus far, you have been working with paired end HiSeq data. Depending on your needs and project design, 
 you might be working with NGS data that has been generated on a MiSeq sequencer. 
-Here you will be working with a paired end (2*250 bp) MiSeq dataset (dataset2) from the same sequencing library (hence the same ‘cell’), 
+Here you will be working with a paired end (2x250 bp) MiSeq dataset (dataset2) from the same sequencing library (hence the same ‘cell’), 
 allowing you to compare assemblies with different datasets generated from the same libraries. 
 As before, you will be assembling with SPAdes, exploring assemblies generated with different flags and filtering settings, see Table 2. 
 Again, given the time consuming nature of the assemblies, try to distribute the jobs between different groups.

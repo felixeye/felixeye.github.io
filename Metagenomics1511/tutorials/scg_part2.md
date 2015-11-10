@@ -14,6 +14,7 @@ ls /proj/g2014180/nobackup/single_cell_exercises/sequences/dataset1/
 ```
 
 Take a look at what Fastq format looks like.
+
 ```sh
 less /proj/g2014180/nobackup/single_cell_exercises/sequences/dataset1/G5_Hiseq_1.fastq
 ```
@@ -66,6 +67,7 @@ __Q2.1:__ Looking at a fastq file, can you tell a repeating pattern in the file?
 __Q2.2:__ Did you notice anything similar in the Fastq headers of the two read pairs? And differences? How can you identify paired-end reads?  
 __Q2.3:__ Did you see where the actual DNA sequences are? Can you count how long the DNA sequences are?  
 A quick example command to count the length of a DNA sequence:
+
 ```sh
 echo "ACGTACGT" | awk '{print length($1)}'
 ```

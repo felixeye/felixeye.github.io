@@ -17,8 +17,9 @@ This makes it easier to compare large metagenomic data sets and associated funct
 ---
 
 The production of a SAG is very sensitive to contamination. Even the slightest amounts of contaminating DNA can be amplified several thousands of times. 
-A good way to detect contaminants in your assembly, is to compare your contigs to all the sequences in NCBI’s ‘nt’ database. 
+A good way to detect contaminants in your assembly, is to compare your contigs to all the sequences in NCBI’s ‘nt’ database.  
 To do this, perform the following BLASTn search:
+
 ```sh
 module load blast/2.2.29+
 blastn -query contigs.fasta -db /proj/g2014180/nobackup/single_cell_exercises/databases/nt -evalue 1e-5 -num_threads 8 -out contigs_vs_nt.blastn #[This shouldn’t take more than 4 minutes]
@@ -28,8 +29,9 @@ Once the search is done, take a quick look of contigs_vs_nt.blastn with less. Sc
 When you are satisfied, hit q to quit less. This file contains all the information that we require to estimate which sequences in your assembly are 
 contaminations, but as you may have guessed by looking at the file, it is an extremely laborious task to inspect each and every contig by hand. 
 What is missing is a clear overview that allows you to quickly identify potential contaminations. This is where MEGAN comes in. 
-MEGAN inspects the blastn file for you, and categorizes each contig to a certain taxonomic group.
+MEGAN inspects the blastn file for you, and categorizes each contig to a certain taxonomic group.  
 Enter the following command in your terminal window:  
+
 ```sh
 module load MEGAN/4.70.4
 MEGAN &
@@ -78,8 +80,9 @@ MEGAN inspects the BLASTp outfile and 'maps' all BLASTp-hits to all KEGG Pathway
 This allows you to get a clear overview of which biological pathways and processes are present in your SAG. 
 
 Note however that the KEGG Pathways database does not contain all proteins and 
-several proteins you might be interested in could be missed by this analysis.
+several proteins you might be interested in could be missed by this analysis.  
 Execute the BLASTp search:  
+
 ```sh
 blastp -query contigs.prodigal.faa -db /proj/g2014180/nobackup/single_cell_exercises/databases/db -evalue 1e-5 -num_threads 8 -out contigs.prodigal_vs_db.blastp
 ```

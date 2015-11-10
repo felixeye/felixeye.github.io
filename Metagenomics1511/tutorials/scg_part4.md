@@ -11,10 +11,13 @@ In order to visualize how the coverage a normal single-cell assembly, you need t
 This can be done with various read-mappers such as bwa, bowtie, gsnap etc. You will be using bwa since it is fast and it can also map partial reads back to our reference.
 Make a folder called 'coverage_mapping' in the 'metagenomics_exercises' folder.  
 Copy the contigs file from an example run:
+
 ```sh
 cp /proj/g2014180/nobackup/single_cell_exercises/assembly_examples/contigs.fasta .
 ```
+
 First you need to create an index for your contigs:
+
 ```sh
 module load bioinfo-tools
 module load bwa/0.7.5a
@@ -24,47 +27,59 @@ bwa index contigs.fasta #[time to run: < 1 sec]
 This should produce 5 more files in your directory called contigs.fasta.[amb|ann|bwt|pac|sa]. 
 Make sure you know where the fastq files are, in this example the location is in a directory above current location, modify '../' if needed.  
 Then map your reads back to your contigs:
+
 ```sh
 bwa mem -t 8 contigs.fasta ../spades_assemblies/G5_Hiseq_1.fastq ../spades_assemblies/G5_Hiseq_2.fastq > G5_vs_contigs.sam [time to run: 2.5 sec]
 ```
 
-This will produce a SAM file (Sequence Alignment/Map) which is a flat text file. These files are often quite large, so converting it to a smaller, binary, format is often a good idea. 
+This will produce a SAM file (Sequence Alignment/Map) which is a flat text file. 
+These files are often quite large, so converting it to a smaller, binary, format is often a good idea. 
 To do this, and to do some additional manipulations to the mapped reads, you will be using picard-tools.
+
 ```sh
 module load picard/1.92
 java -jar /sw/apps/bioinfo/picard/1.92/milou/SamFormatConverter.jar INPUT=G5_vs_contigs.sam OUTPUT=G5_vs_contigs.bam [time to run: 13 sec]
 ```
+
 We can now safely remove our original SAM file in order to save space
+
 ```sh
 rm G5_vs_contigs.sam
 ```
+
 The BAM file (Binary Alignment/Map) is, as the name implies, a binary file, and can therefor not be viewed with normal tools such as less or more. 
 If you still want to see the file as plain text, you can use picard-tools ViewSam. 
 This tool prints the whole file to the screen. For easier viewing, pipe the output to 'less'.
+
 ```sh
 java -jar /sw/apps/bioinfo/picard/1.92/milou/ViewSam.jar INPUT=G5_vs_contigs.bam | less
 ```
+
 If you want to know more about SAM files, have a look at http://samtools.sourceforge.net/SAMv1.pdf. 
 Especially section 1.4 is helpful for understanding the different columns. 
 In order to more easily make sense of the information in the alignment file, you should sort it. 
 If you viewed your bam file, you might have noticed that the aligned reads comes in the same order as in the input reads. 
-This is not tremendously helpful. A more easily interpretative way would be to have the aligned reads show up in the order they appear along the various contigs. 
+This is not tremendously helpful. A more easily interpretative way would be to have the aligned reads show up in the order they appear along the various contigs.  
 Or to put it another way, with increasing coordinates. This can be achieved by using picard-tools SortSam:
+
 ```sh
 java -jar /sw/apps/bioinfo/picard/1.92/milou/SortSam.jar INPUT=G5_vs_contigs.bam OUTPUT=G5_vs_contigs_sorted.bam SORT_ORDER=coordinate #[time to run: 25 sec]
 ```
+
 If you now view the sorted bam file with *ViewSam.jar*, you will see that the contigs appear in order after each other.
 
 ## 4.1 Assessing coverage bias in Artemis
 ---
 
-To view the reads mapped back to our contigs you can use artemis. In order to load your BAM file, you must first index it. 
+To view the reads mapped back to our contigs you can use artemis. In order to load your BAM file, you must first index it.  
 You can do this with picard-tools BuildBamIndex:
+
 ```sh
 java -jar /sw/apps/bioinfo/picard/1.92/milou/BuildBamIndex.jar INPUT=G5_vs_contigs_sorted.bam O=G5_vs_contigs_sorted.bam.bai
 ```
 
-Open artemis with the following command
+Open artemis with the following command:  
+
 ```sh
 module load artemis/15.0.0
 art &
@@ -109,11 +124,13 @@ We can also find a few that have a partial mapping. This usually looks something
 then the following 60 bases mapped against our contig. 
 If the masked of part of our read is mapped against another coordinate we can tell by the twelfth field in the SAM file. 
 It is prefixed with “SA:Z”. To find these kinds of reads we can use ‘grep’.
+
 ```sh
 java -jar /sw/apps/bioinfo/picard/1.92/milou/ViewSam.jar I=G5_vs_contigs_sorted.bam | grep "SA:Z:"
 ```
 
 If we also want to count the number of such reads we can use greps '-c' flag.
+
 ```sh
 java -jar /sw/apps/bioinfo/picard/1.92/milou/ViewSam.jar I=G5_vs_contigs_sorted.bam | grep -c "SA:Z:"
 # Or we could also use 'wc' (word count)
@@ -122,6 +139,7 @@ java -jar /sw/apps/bioinfo/picard/1.92/milou/ViewSam.jar I=G5_vs_contigs_sorted.
 
 One thing to keep in mind is that some reads will be at the very ends of contigs, and that could be the reason why they are not mapped in full-length. 
 To correct for this we modify our command with some awk-magic.
+
 ```sh
 java -jar /sw/apps/bioinfo/picard/1.92/milou/ViewSam.jar I=G5_vs_contigs_sorted.bam | grep "SA:Z:" | awk '{split($3,array,"_"); if($4 > 200 && $4 < (array[4]-300)) print $0}' | wc -l
 ```
@@ -139,11 +157,13 @@ Some reads might be split due to assembly-errors or sequencing errors. If we wan
 
 When you’ve done your read-mapping, you can also inspect the insert-sizes, size of the actual sequenced fragments, quite easily. 
 Picard-tools have a ready made tool for this called CollectInsertSizeMetrics.
+
 ```sh
 java -jar /sw/apps/bioinfo/picard/1.92/milou/CollectInsertSizeMetrics.jar HISTOGRAM_FILE=G5_vs_contigs_inssizePlot.pdf INPUT=G5_vs_contigs_sorted.bam OUTPUT=G5_vs_contigs_inssize.out #[time to run = 2.5 sec]
 ```
 
 You can inspect the insert size distribution by opening the pdf file in firefox.
+
 ```sh
 firefox G5_vs_contigs_inssizePlot.pdf
 #or Okular.

@@ -29,12 +29,14 @@ An overview of the steps are listed below:
 
 In this bonus exercise, a different parameter will be introduced, i.e., k-mers. SPAdes in default mode runs with **k-mers of 21, 33, and 55**. 
 In this exercise, you will set the **k-mers to 55, 77, and 99**. To set these k-mers, you need to provide this parameter when running SPAdes:
+
 ```
 -k 55,77,99
 ```
 
 Record the results after the assemblies and assembly statistics are calculated.
 
+<p>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;border-color:#999;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}
@@ -100,8 +102,9 @@ Record the results after the assemblies and assembly statistics are calculated.
     <td class="tg-yw4l">-</td>
   </tr>
 </table>
+</p>
 
-
+<p>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;border-color:#999;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}
@@ -167,6 +170,7 @@ Record the results after the assemblies and assembly statistics are calculated.
     <td class="tg-yw4l">-</td>
   </tr>
 </table>
+</p>
 
 ### Questions
 ---
