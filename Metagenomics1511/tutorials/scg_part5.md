@@ -29,14 +29,14 @@ When you are satisfied, hit q to quit less. This file contains all the informati
 contaminations, but as you may have guessed by looking at the file, it is an extremely laborious task to inspect each and every contig by hand. 
 What is missing is a clear overview that allows you to quickly identify potential contaminations. This is where MEGAN comes in. 
 MEGAN inspects the blastn file for you, and categorizes each contig to a certain taxonomic group.
-Enter the following command in your terminal window:
+Enter the following command in your terminal window:  
 ```sh
 module load MEGAN/4.70.4
 MEGAN &
 ```
 
 When you first launch MEGAN, it will ask you to enter the license. 
-Usually, you need to register and obtain a license to use MEGAN here (http://www-ab2.informatik.uni-tuebingen.de/software/megan/register/) 
+Usually, you need to register and obtain a license to use MEGAN here ( http://www-ab2.informatik.uni-tuebingen.de/software/megan/register/ ) 
 but in this exercise, you can just click on 'skip entering the license' and it should take you to the main interface.
 This will open MEGAN’s graphical user interface (GUI). Then select *File -> Import From BLAST*…
 In the Import tab, click the folder icon. Then find *'contigs_vs_nt.blastn'* and hit Open. Click two times Next Step. 
@@ -58,11 +58,12 @@ in this case the root. The sizes of the nodes correspond to the relative amounts
 **Q5.1b** How many contigs are assigned to this node and all of its subnodes in total?
 *Q5.1c** Which subnode of 'Bacteria' contains all of the remaining bacterial contigs not assigned to 'Bacteria'?  
 There are two special nodes displayed: 'Not assigned' and 'No hits'. The 'No hits' node contains all the contigs that BLASTn could not find a significant hit for in the nt database. The 'Not assigned' node contains contigs for which BLASTn did find a hit for in nt, but MEGAN could not confidently assign it to a taxonomic node.  
-**Q5.2** Why do you think BLASTn could not find a hit in nt for the majority of the contigs?
+**Q5.2** Why do you think BLASTn could not find a hit in nt for the majority of the contigs?  
 MEGAN allows you to inspect a selected node in more detail. Right click the 'Thermodesulfobacterium' node and hit Inspect. In the window that pops up, uncollapse Thermodesulfobacterium. Now you see the identities of all the contigs that were assigned to this specific node. Here you can also find all the hits and BLASTn alignments.  
 Close the window.
 Explore all the taxonomic nodes to which MEGAN has assigned contigs.  
-**Q5.3** Did you detect any contamination in your assembled dataset? If so, which taxa (or taxon) is (or are) the source of this contamination?  
+**Q5.3** Did you detect any contamination in your assembled dataset?  
+If so, which taxa (or taxon) is (or are) the source of this contamination?  
 **Q5.4** Of how much contigs and how much sequence in total (in kbp) does this contamination consist of?  
 **Q5.5** What do you think could be the cause of this contamination?  
 Close MEGAN and return to the terminal.
@@ -78,7 +79,7 @@ This allows you to get a clear overview of which biological pathways and process
 
 Note however that the KEGG Pathways database does not contain all proteins and 
 several proteins you might be interested in could be missed by this analysis.
-Execute the BLASTp search:
+Execute the BLASTp search:  
 ```sh
 blastp -query contigs.prodigal.faa -db /proj/g2014180/nobackup/single_cell_exercises/databases/db -evalue 1e-5 -num_threads 8 -out contigs.prodigal_vs_db.blastp
 ```
@@ -102,8 +103,10 @@ Explore the KEGG Pathways.
 **Q5.9** Does this SAG encode genes for flagellar assembly? If so, which ones?   
 **Q5.10** How many genes encoding for ribosomal proteins are present in the SAG?  
 **Q5.11** Look at metabolism pathways. Would you say this bacterium is able to grow aerobically?  
-**Q5.12** What other potentially interesting proteins can you find? Explain for each one why do you think they are interesting.  
-**Q5.13** Based on what you find in the KEGG window in MEGAN, what can you say about the lifestyle of the bacterium from which this SAG was retrieved? For example, would you say it is motile, does it grow aerobically or anaerobically, is it free-living or symbiotic?  
+**Q5.12** What other potentially interesting proteins can you find?  
+Explain for each one why do you think they are interesting.  
+**Q5.13** Based on what you find in the KEGG window in MEGAN, what can you say about the lifestyle of the bacterium from which this SAG was retrieved?  
+For example, would you say it is motile, does it grow aerobically or anaerobically, is it free-living or symbiotic?  
 Try to say as much as possible.  
 **Q5.14** Given the estimated completeness of the genome (see 3f), how confident are you about statements regarding the nature of this bacterium?  
 Close MEGAN and return to the terminal.  

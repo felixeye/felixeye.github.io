@@ -56,13 +56,13 @@ Record the results after the assemblies and assembly statistics are calculated.
   </tr>
   <tr>
     <td class="tg-yw4l">Number of reads</td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l">-</td>
+    <td class="tg-yw4l">-</td>
   </tr>
   <tr>
     <td class="tg-6k2t">Assembly time</td>
-    <td class="tg-6k2t"></td>
-    <td class="tg-6k2t"></td>
+    <td class="tg-6k2t">-</td>
+    <td class="tg-6k2t">-</td>
   </tr>
   <tr>
     <td class="tg-yw4l">Number of contigs</td>
@@ -101,7 +101,72 @@ Record the results after the assemblies and assembly statistics are calculated.
   </tr>
 </table>
 
-Table 6
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#999;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#fff;background-color:#26ADE4;}
+.tg .tg-yw4l{vertical-align:top}
+.tg .tg-pxng{background-color:#ffffff;color:#000000;vertical-align:top}
+.tg .tg-25to{background-color:#26ade4;font-weight:bold;color:#ffffff;vertical-align:top}
+.tg .tg-6k2t{background-color:#D2E4FC;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l">Table 6</th>
+    <th class="tg-pxng" colspan="2">MiSeq data - Processed with SeqPrep<br></th>
+  </tr>
+  <tr>
+    <td class="tg-25to">(Dataset 3 - N21)</td>
+    <td class="tg-25to">With --sc and --careful flags</td>
+    <td class="tg-25to">using different k-mers (eg: 55,77,99)</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Number of reads</td>
+    <td class="tg-yw4l">-</td>
+    <td class="tg-yw4l">-</td>
+  </tr>
+  <tr>
+    <td class="tg-6k2t">Assembly time</td>
+    <td class="tg-6k2t">-</td>
+    <td class="tg-6k2t">-</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Number of contigs</td>
+    <td class="tg-yw4l">-</td>
+    <td class="tg-yw4l">-</td>
+  </tr>
+  <tr>
+    <td class="tg-6k2t">Total assembly size</td>
+    <td class="tg-6k2t">-</td>
+    <td class="tg-6k2t">-</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Largest contig</td>
+    <td class="tg-yw4l">-</td>
+    <td class="tg-yw4l">-</td>
+  </tr>
+  <tr>
+    <td class="tg-6k2t">N50</td>
+    <td class="tg-6k2t">-</td>
+    <td class="tg-6k2t">-</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">G+C%</td>
+    <td class="tg-yw4l">-</td>
+    <td class="tg-yw4l">-</td>
+  </tr>
+  <tr>
+    <td class="tg-6k2t">Number of ORFs</td>
+    <td class="tg-6k2t">-</td>
+    <td class="tg-6k2t">-</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Completeness (%)</td>
+    <td class="tg-yw4l">-</td>
+    <td class="tg-yw4l">-</td>
+  </tr>
+</table>
 
 ### Questions
 ---
