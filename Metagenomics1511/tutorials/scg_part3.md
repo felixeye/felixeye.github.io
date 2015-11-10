@@ -530,7 +530,7 @@ perl /proj/g2014180/nobackup/single_cell_exercises/scripts/micomplete.pl -h /pro
 
 If the script completed without any errors, you should see that the script printed something like this:
 
-Completeness: ??
+Completeness: ??  
 N markers found: ?? out of 139
 
 The script looks for unique marker genes that are present in single copies in most bacteria and estimates how complete the genome is based on the marker genes found. Completeness is shown as fractions and you should multiply this with 100 to get the percentage completeness.
@@ -539,7 +539,8 @@ The script looks for unique marker genes that are present in single copies in mo
 ## Questions:
 ---
 
-**Q3.1:** Did you notice how many read pairs from HiSeq or MiSeq data were merged by SeqPrep? Is there a reason why a certain data set has higher merge rates than the other? How many reads were discarded in the process?  
+**Q3.1:** Did you notice how many read pairs from HiSeq or MiSeq data were merged by SeqPrep?  
+Is there a reason why a certain data set has higher merge rates than the other? How many reads were discarded in the process?  
 **Q3.2:** Did you notice any differences between HiSeq and MiSeq data assembled using both --sc and --careful flags, i.e., default?  
 **Q3.3:** Did you notice any differences in the quality of assembly when --sc and --careful were omitted in each data set?  
 **Q3.4:** What do you think is the best way to assess the 'quality' of an assembly? (e.g. total size, N50, number of predicted ORFs, completeness)  
