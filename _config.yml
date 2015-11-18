@@ -1,13 +1,20 @@
 ###########
 # site.url, site.title
 
-url:   'http://scilifelab.github.io/courses'
-title: 'SciLifeLab Courses'
-google_analytics: 'UA-23985298-11'
+url:   'http://felixeye.github.io/'
+title: 'TEST SciLifeLab Courses'
+#google_analytics: 'UA-23985298-11'
 
 
 ########
 # more settings
+
+# Setup
+title:               Courses
+tagline:             ScilifeLab course
+#url:                 http://getpoole.com
+paginate:            1
+baseurl:             ""
 
 # markdown: redcarpet
 # highlighter: pygments
@@ -18,7 +25,8 @@ markdown: redcarpet
 pygments: true
 
 sass:
-  sass_dir: css
+  #sass_dir: css
+  sass_dir: _sass
   style:    expanded
 
 
@@ -26,6 +34,11 @@ sass:
 exclude:
 - README.md
 
+# About/contact
+author:
+  name:              Mark Otto
+  url:               https://twitter.com/hfixou
+  email:             felixhoma@yahoo.fr
 
 safe: true
 lsi: false
