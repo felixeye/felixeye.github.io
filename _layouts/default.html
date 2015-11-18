@@ -1,44 +1,28 @@
 <!DOCTYPE html>
-<html>
-<head>
-   <meta charset="utf-8">
-   <title>{{ page.title }} - {{ site.title }}</title>
+<html lang="en">
 
-   <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/style.css" >
-   <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/syntax.css" >
+  {% include head.html %}
 
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-   <script src="{{ site.url }}/js/bootstrap.min.js"></script>
-</head>
-<body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="https://www.scilifelab.se/"><img src="{{ site.url }}/images/scilife-green_on_black-35px.png"></a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="./">Home</a></li>
-            <li><a href="{{ site.url }}/">Past Courses</a></li>
-            <li><a href="http://www.scilifelab.se/education/courses/">Future Courses</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+  <body>
 
-    <div class="container">
-      <div class="content">
+    <div class="container content">
+      <header class="masthead">
+        <h3 class="masthead-title">
+          <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+          <small>{{ site.tagline }}</small>
+        </h3>
+      </header>
+
+      <main>
         {{ content }}
-      </div>
-    </div><!-- /.container -->
+      </main>
 
-   {% include analytics.html %}
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
+        </small>
+      </footer>
+    </div>
 
-</body>
+  </body>
 </html>
