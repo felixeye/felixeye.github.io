@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta charset="utf-8">
-   <title>{{ page.title }} - {{ site.title }}</title>
-
-   <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/style.css" >
-   <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/syntax.css" >
-
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-   <script src="{{ site.url }}/js/bootstrap.min.js"></script>
+   {% include head.html %}
 </head>
 <body>
+	{% include sidebar.html %}
   <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
