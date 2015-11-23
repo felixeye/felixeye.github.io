@@ -21,8 +21,8 @@ mkdir dataset1 dataset2
 Next, make symbolic links of sequences in those folders:
 
 ```sh
-ln -s /proj/g2015028/nobackup/single_cell_exercises/sequences/dataset1/ dataset1/
-ln -s /proj/g2015028/nobackup/single_cell_exercises/sequences/dataset2/ dataset2/
+ln -s /proj/g2015028/nobackup/single_cell_exercises/sequences/dataset1/* dataset1/
+ln -s /proj/g2015028/nobackup/single_cell_exercises/sequences/dataset2/* dataset2/
 ```
 **Please, do not modify those files**
 
@@ -36,7 +36,7 @@ ls dataset2
 You should now see 2 files per dataset, a forward fastq file ```_R1_001.fastq``` and its reverse ```_R2_001.fastq```  
 
 Later in some commands we use the variables *sample* and *trim*, the following commands set those variables. 
-We will also load the softwares we need to work, if you are interested check modules_load file for details.  
+We will also load the softwares we need to complete all this tutorial.  
 **In case you loose your connection, you will need to redo this step again.**  
 
 #### For *Hiseq* data without trimming:
@@ -44,7 +44,7 @@ We will also load the softwares we need to work, if you are interested check mod
 sample=Hiseq
 trim=''
 cd ~/single_cell_exercises/dataset1
-source /proj/g2015028/nobackup/single_cell_exercises/modules_load
+source /proj/g2015028/nobackup/single_cell_exercises/scripts/modules_load
 ```
 
 #### For *Hiseq* data with trimming:
@@ -52,7 +52,7 @@ source /proj/g2015028/nobackup/single_cell_exercises/modules_load
 sample=Hiseq
 trim=Trimmomatic_
 cd ~/single_cell_exercises/dataset1
-source /proj/g2015028/nobackup/single_cell_exercises/modules_load
+source /proj/g2015028/nobackup/single_cell_exercises/scripts/modules_load
 ```
 
 #### For *Miseq* data without trimming:
@@ -60,7 +60,7 @@ source /proj/g2015028/nobackup/single_cell_exercises/modules_load
 sample=Miseq
 trim=''
 cd ~/single_cell_exercises/dataset2
-source /proj/g2015028/nobackup/single_cell_exercises/modules_load
+source /proj/g2015028/nobackup/single_cell_exercises/scripts/modules_load
 ```
 
 #### For *Miseq* data with merging:
@@ -69,5 +69,25 @@ trimming
 sample=Miseq
 trim=Trimmomatic_
 cd ~/single_cell_exercises/dataset2
-source /proj/g2015028/nobackup/single_cell_exercises/modules_load
+source /proj/g2015028/nobackup/single_cell_exercises/scripts/modules_load
 ```
+
+Now we can check that all softwares have been correctly loaded, please type the following command in your terminal and check that all element of the list below is listed.
+```sh
+module list
+```
+
+* spades/3.1.1
+* quast/2.3
+* rnammer/1.2
+* bwa/0.7.5a
+* artemis/15.0.0
+* MEGAN/4.70.4
+* SeqPrep/2013-11-14
+* prodigal/2.60
+* hmmer/3.1b1-gcc
+* openmpi/1.4.5
+* picard/1.92
+* blast/2.2.29+
+
+**Please contact the teachers if one of those softwares do not appear in your list.**
