@@ -64,7 +64,8 @@ source /proj/g2015028/nobackup/single_cell_exercises/modules_load
 ```
 
 #### For *Miseq* data with merging:
-```trimming
+```
+trimming
 sample=Miseq
 trim=Trimmomatic_
 cd ~/single_cell_exercises/dataset2
