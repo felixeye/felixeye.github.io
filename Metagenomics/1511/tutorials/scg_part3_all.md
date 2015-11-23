@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  Part 3: Single cell genome assembly using SPAdes
+title:  'Part 3: Single cell genome assembly using SPAdes'
 ---
 
 # Part 3: Single cell genome assembly using SPAdes
