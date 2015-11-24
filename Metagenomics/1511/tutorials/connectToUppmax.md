@@ -54,8 +54,8 @@ xclock
 If you see the clock then you should be able to launch GUI-based tools such as MEGAN or Artemis remotely. Close the clock.
 
 <div>
- <div style="float:left">Previous page</div>
- <div style="clear:both; float:right">Next page</div>
+ <span style="float:left">Previous page</span>
+ <span style="clear:both; float:right">Next page</span>
 </div>
 
 <!---
