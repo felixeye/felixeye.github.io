@@ -52,9 +52,7 @@ Make sure that you can launch graphical tools in your node by typing this comman
 xclock
 ```
 
-If you see the clock then you should be able to launch GUI-based tools such as MEGAN or Artemis remotely. Close the clock.  
-
-<!---
+If you see the clock then you should be able to launch GUI-based tools such as MEGAN or Artemis remotely. Close the clock.
 Next, before you are able to use a specific bioinformatics tool it needs to be first loaded using the 'module load' command.  
 For example, You can view the list of available modules by typing:  
 
@@ -76,7 +74,7 @@ module avail
 ```
 
 Now, you will see the bioinformatics tools installed on Milou that are categorized by the type of main tasks they perform.  
--->
+
 <!---
 ```bash
 jobinfo -u *username*
