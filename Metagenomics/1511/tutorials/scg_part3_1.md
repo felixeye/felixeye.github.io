@@ -72,7 +72,7 @@ cd ~/single_cell_exercises/dataset2
 source /proj/g2015028/nobackup/single_cell_exercises/scripts/modules_load
 ```
 
-Now we can check that all softwares have been correctly loaded, please type the following command in your terminal and check that all element of the list below is listed.
+Now we can check that all softwares have been correctly loaded, please type the following command in your terminal and check that all element of the list below is listed.  
 ```sh
 module list
 ```
