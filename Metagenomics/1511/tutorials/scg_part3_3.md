@@ -5,7 +5,7 @@ title:  'Part 3: Single cell genome assembly using SPAdes'
 
 # Part 3: Single cell genome assembly
 
-We will run three different assemblers on the data. You will choose either HiSeq or MiSeq dataset and trim it or use raw reads depending on how you organize your group. Make sure your variables (sample and trimming) are set properly. You will use one dataset so you can have one assembly folder and create three subfolders for the Ray, IDBA and Spades results. 
+We will run three different assemblers on the data. You will choose either HiSeq or MiSeq dataset and trim it or use raw reads depending on how you organize your group. Make sure your variables (sample and trimming) are set properly. You will use one dataset so you can have one assembly folder and create three subfolders for the Ray, IDBA and Spades results. You do not need to create the folders, the assemblers will do that.
 
 ```sh
 mkdir -p assemblies/
@@ -31,17 +31,13 @@ Spades is a prokaryotic genome assembler that was specifically designed to be ab
 >-1 trimmed/G5_${sample}${trim}_1P.fastq \
 >-2 trimmed/G5_${sample}${trim}_2P.fastq \
 >-s trimmed/G5_${sample}${trim}_U.fastq \
->-o assemblies/Spades
+>-o assemblies/Spades${trim}
 >```
 
 
 *Notice: Those previous commands will launch SPAdes assembly but also check how long the assembly takes. After the assembly has completed, check the time it took for the program to run. You should look at the 'real' time. 
 Record the time in the spreadsheet table.
 In general, typing the command ```time``` before other commands will help you check how long the computation took.*
-
-**Optional steps** 
-
-If you have time you can investigate the influence of the flags on the assembly time and results. '--careful' flag uses *'bowtie'* tool to map the reads back to the contigs and check for errors due to bad quality sequences and correct these errors. This results in longer assembly times but should improve the results, especially for reads that were not pre-processed. SPAdes can handle single-cell genomic data that is known to be highly biased in terms of sequence coverage along the length of the genome by using the '--sc' flag.
 
 
 ## 3.3b. Assemble your data Using IDBA-UD
@@ -61,7 +57,7 @@ IDBA-UD does not take the quality files and in the first step you have to conver
 
 >```sh
 >fq2fa --merge trimmed/G5_${sample}${trim}_1P.fastq trimmed/G5_${sample}${trim}_2P.fastq trimmed/G5_${sample}${trim}_idba_input.fa
->time idba_ud -r trimmed/G5_${sample}${trim}_idba_input.fa -o assemblies/IDBA --maxk 124 
+>time idba_ud -r trimmed/G5_${sample}${trim}_idba_input.fa -o assemblies/IDBA${trim} --maxk 124 
 >```
 
 ## 3.3c. Assemble your data Using Ray
@@ -77,13 +73,11 @@ Ray is an assembler that can be highly parallelized and can therefore be a good 
 * if you work with the **trimmed** reads
 
 >```sh
->time mpirun -n 8 Ray -k 31 -p trimmed/G5_${sample}${trim}_1P.fastq trimmed/G5_${sample}${trim}_2P.fastq -o assemblies/Ray &> assemblies/ray.log 
+>time mpirun -n 8 Ray -k 31 -p trimmed/G5_${sample}${trim}_1P.fastq trimmed/G5_${sample}${trim}_2P.fastq -o assemblies/Ray${trim} &> assemblies/ray.log 
 >```
 
 
-**Optional steps** 
 
-If you have time you can investigate the influence of various kmer lengths on the assembly results. Try for example using kmers increasing in steps of 10 from 30 to 64, which is the hard-coded limit. Check Ray log output file to make sure about the kmer actually used. If number larger than the threshold is given Ray changes it to the maximum allowed, makes a not of it in the log and proceeds. 
 
 
 

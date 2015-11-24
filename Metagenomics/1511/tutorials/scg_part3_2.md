@@ -19,7 +19,7 @@ We first created a folder to store the trimmed files:
 mkdir trimmed
 ```
 
-(check the command)
+Make sure before you run this command that 'trim' variable is set correctly.
 
 ```sh
 java -jar $TRIMMOMATIC_HOME/trimmomatic.jar PE -phred33 \
