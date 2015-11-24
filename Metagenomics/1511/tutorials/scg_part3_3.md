@@ -52,17 +52,17 @@ IDBA-UD does not take the quality files and in the first step you have to conver
 
 * if you work with the **raw** reads
 
-```sh
-fq2fa --merge G5_${sample}_R1_001.fastq G5_${sample}_R2_001.fastq G5_${sample}.fa
-time idba_ud -r G5_${sample}.fa -o assemblies/IDBA --maxk 124
-```
+>```sh
+>fq2fa --merge G5_${sample}_R1_001.fastq G5_${sample}_R2_001.fastq G5_${sample}_idba_input.fa
+>time idba_ud -r G5_${sample}_idba_input.fa -o assemblies/IDBA --maxk 124
+>```
 
 * if you work with the **trimmed** reads
 
-```sh
-fq2fa --merge trimmed/G5_${sample}${trim}_1P.fastq trimmed/G5_${sample}${trim}_2P.fastq trimmed/G5_${sample}${trim}.fa
-time idba_ud -r trimmed/G5_${sample}${trim}.fa -o assemblies/IDBA --maxk 124 
-```
+>```sh
+>fq2fa --merge trimmed/G5_${sample}${trim}_1P.fastq trimmed/G5_${sample}${trim}_2P.fastq trimmed/G5_${sample}${trim}_idba_input.fa
+>time idba_ud -r trimmed/G5_${sample}${trim}_idba_input.fa -o assemblies/IDBA --maxk 124 
+>```
 
 ## 3.3c. Assemble your data Using Ray
 
@@ -70,15 +70,15 @@ Ray is an assembler that can be highly parallelized and can therefore be a good 
 
 * if you work with the **raw** reads
 
-```sh
-time mpirun -n 8 Ray -k 31 -p G5_${sample}_R1_001.fastq G5_${sample}_R2_001.fastq -o assemblies/Ray &> assemblies/ray.log 
-```
+>```sh
+>time mpirun -n 8 Ray -k 31 -p G5_${sample}_R1_001.fastq G5_${sample}_R2_001.fastq -o assemblies/Ray &> assemblies/ray.log 
+>```
 
 * if you work with the **trimmed** reads
 
-```sh
-time mpirun -n 8 Ray -k 31 -p trimmed/G5_${sample}${trim}_1P.fastq trimmed/G5_${sample}${trim}_2P.fastq -o assemblies/Ray &> assemblies/ray.log 
-```
+>```sh
+>time mpirun -n 8 Ray -k 31 -p trimmed/G5_${sample}${trim}_1P.fastq trimmed/G5_${sample}${trim}_2P.fastq -o assemblies/Ray &> assemblies/ray.log 
+>```
 
 
 **Optional steps** 
