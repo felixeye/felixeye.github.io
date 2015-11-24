@@ -13,19 +13,30 @@ To run 'Quast', first we will create a link to the different contig files in the
 Use the following commands to help yourself:  
 
 ```sh
-cd spades_assemblies
-ln -s `pwd`/G5_${sample}_${merge}sc_careful/contigs.fasta G5_${sample}_${merge}sc_careful.fasta
+cd assemblies
+ln -s `pwd`/IDBA${trim}/contig.fa G5_${sample}${trim}_IDBA_contig.fasta
+ln -s `pwd`/Spades${trim}/contigs.fasta G5_${sample}${trim}_Spades_contig.fasta
+ln -s `pwd`/Ray${trim}/Contigs.fasta G5_${sample}${trim}_Ray_contig.fasta
 ```
 
 then run quast on all assemblies at once:
 
 ```sh
-#module load quast/2.3
-quast.py -o assembly_metrics *.fasta
-cd ..
+quast.py -T 8 -o assembly_metrics *.fasta
 ```
 
-Results from 'Quast' will be found in the 'assembly_metrics' folder. Take a look at the files produced by the program. 
-The summary file containing the stats is 'report.txt'. You should see the assembly metrics such as N50, G+C%, largest contig, total length (i.e., total length of all contigs added).  
+Results from 'Quast' will be found in the *assembly_metrics* folder. Take a look at the files produced by the program. 
+The summary file containing the stats is *report.txt*. You should see the assembly metrics such as N50, G+C%, largest contig, total length (i.e., total length of all contigs added).  
 
-Report the results in the spreadsheet.
+Report the results in the spreadsheet:
+
+```sh
+less assembly_metrics/report.txt
+```
+
+<!---
+For the next step we need to be one folder up from the folder *assembly_metrics*
+```sh
+cd ..
+```
+-->
