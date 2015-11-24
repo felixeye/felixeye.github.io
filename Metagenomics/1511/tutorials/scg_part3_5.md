@@ -13,7 +13,7 @@ In this exercise, you will learn how to use Prodigal to predict ORFs and to prep
 Type the following commands to run Prodigal:  
 
 For each assembly file run the following command. This command is based on the output file for *IDBA* assembler, do the same for Ray and SPAdes output.  
-*Hint: use the command ```ls -l *.fasta``` to see all assembly files.*  
+*Hint: use the command ```ls *.fasta``` to see all assembly files.*  
 Please, adapt this command according to your file name:  
 
 ```sh
