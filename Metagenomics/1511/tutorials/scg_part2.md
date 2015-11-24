@@ -72,17 +72,15 @@ How can you identify paired-end reads?
 
 <div>
  <span style="float:left"><a class="btn btn-primary" href="connectToUppmax"> Previous page</a></span>
- <span style="float:right"><a class="btn btn-primary" href="scg_part2"> Next page</a></span>
+ <span style="float:right"><a class="btn btn-primary" href="scg_part3"> Next page</a></span>
 </div>
 
 <!---
 Illumina produces paired-end reads that always come in pairs and have the same number of reads in each pair.
 __Q2.3:__ (BONUS) Did you see where the actual DNA sequences are? Can you count how long the DNA sequences are?  
 A quick example command to count the length of a DNA sequence:
-
 ```sh
 echo "ACGTACGT" | awk '{print length($1)}'
 head -n4  /proj/g2015028/nobackup/single_cell_exercises/sequences/dataset2/G5_Miseq_R1_001.fastq | sed -n 2p | awk '{print length($1)}'
 ```
-
 -->
