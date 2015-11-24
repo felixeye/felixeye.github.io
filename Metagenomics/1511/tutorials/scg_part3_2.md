@@ -15,7 +15,7 @@ Before assembly you can do several pre-processing steps. Here we will focus on q
 
 We first created a folder to store the trimmed files:
 
-````sh
+```sh
 mkdir trimmed
 ```
 
@@ -34,7 +34,7 @@ The previous command create 4 different files in the folder *trimmed*:
 * *G5_${sample}_Trimmomatic_1U.fastq*: unpaired forward reads  
 * *G5_${sample}_Trimmomatic_2U.fastq*: unpaired reverse reads  
 
-We will merge both unpaired files into a single one:  
+We will merge both unpaired files into a single one: 
 ```sh
 cat trimmed/G5_${sample}_Trimmomatic_1U.fastq trimmed/G5_${sample}_Trimmomatic_2U.fastq > trimmed/G5_${sample}_Trimmomatic_U.fastq
 #rm trimmed/G5_${sample}_Trimmomatic_1U.fastq trimmed/G5_${sample}_Trimmomatic_2U.fastq
