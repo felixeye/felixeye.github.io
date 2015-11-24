@@ -50,7 +50,7 @@ source /proj/g2015028/nobackup/single_cell_exercises/scripts/modules_load
 #### For *Hiseq* data with trimming:
 ```sh
 sample=Hiseq
-trim=Trimmomatic_
+trim=Trimmomatic
 cd ~/single_cell_exercises/dataset1
 source /proj/g2015028/nobackup/single_cell_exercises/scripts/modules_load
 ```
@@ -67,7 +67,7 @@ source /proj/g2015028/nobackup/single_cell_exercises/scripts/modules_load
 ```
 trimming
 sample=Miseq
-trim=Trimmomatic_
+trim=Trimmomatic
 cd ~/single_cell_exercises/dataset2
 source /proj/g2015028/nobackup/single_cell_exercises/scripts/modules_load
 ```
