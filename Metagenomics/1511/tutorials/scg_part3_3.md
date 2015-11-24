@@ -8,7 +8,7 @@ title:  'Part 3: Single cell genome assembly using SPAdes'
 We will run three different assemblers on the data. You will choose either HiSeq or MiSeq dataset and trim it or use raw reads depending on how you organize your group. Make sure your variables (sample and trimming) are set properly. You will use one dataset so you can have one assembly folder and create three subfolders for the Ray, IDBA and Spades results. 
 
 ```sh
-mkdir -p assemblies/Ray assemblies/IDBA assemblies/Spades
+mkdir -p assemblies/
 ```
 
 ## 3.3a. Assemble your data Using SPAdes
