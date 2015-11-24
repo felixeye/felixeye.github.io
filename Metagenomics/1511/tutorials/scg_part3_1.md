@@ -91,3 +91,10 @@ module list
 * blast/2.2.29+
 
 **Please contact the teachers if one of those softwares do not appear in your list.**
+
+
+<div>
+ <span style="float:left"><a class="btn btn-primary" href="scg_part3"> Previous page</a></span>
+ <span style="float:right"><a class="btn btn-primary" href="scg_part3_2"> Next page</a></span>
+</div>
+

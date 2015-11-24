@@ -41,12 +41,9 @@ cat trimmed/G5_${sample}_Trimmomatic_1U.fastq trimmed/G5_${sample}_Trimmomatic_2
 #rm trimmed/G5_${sample}_Trimmomatic_1U.fastq trimmed/G5_${sample}_Trimmomatic_2U.fastq
 ```
 
-<!---
-**Optional steps** 
 
-If you have time you can come back here and check the following extra steps.
+<div>
+ <span style="float:left"><a class="btn btn-primary" href="scg_part3_1"> Previous page</a></span>
+ <span style="float:right"><a class="btn btn-primary" href="scg_part3_3"> Next page</a></span>
+</div>
 
-To visualize the quality of the reads you can use [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/) which provide plots for several checks together with some guidelines on which results might be suspicious. You can see for example a plot of qualities along the read length, look at the duplication level, and so on.
-
-Another step you can do if your library setup is such that sequencing reads should be overlapping, is merging them. An example of how to do that is described [here](scg_part3_merging). Considering that all of the assemblers we use can take in paired reads, and some of them (Spades) actually do not recommend using the qualities that the merging result in, we skip this for the main assembly comparison. It can still be a useful step for other purposes.
--->

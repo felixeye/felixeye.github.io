@@ -10,12 +10,6 @@ In this part of the course, you will start doing assemblies of 'real' (but reduc
 Out of the total 12 assemblies we like you to compare, we suggest one person does only 3 on one of the datasets and pre-treatments. This way you can focus and skip handling too many folders and files. Assembly is also relatively time-consuming (although we have prepared reduced datasets for the tutorial to keep the times reasonable). So if you work as a group of 4 you can collect the results in one summary table we will look at. You will find a list of these tables below.
 </p>
 
-<!--- 
-If you can complete these 12 assemblies and have time remaining, you can do Part 7 as a bonus exercise. 
-Note that Part 6 is for running assemblies using MiSeq data. 
-Note that you will have to fill in the results from the exercises in Tables 1 to 4 
---->
-
 Actual tables to be filled in are provided in Google Docs and the links can be found below. 
 You should talk to each other to form the groups and split the work. Do not worry if you miss something, we will collect result from all groups and discuss it together.  
 
@@ -59,32 +53,10 @@ These steps will help you obtain results to think about the following questions:
 **Q3.7:** Try to find out in what type of environment you might find similar organisms in.
 
 
-
-
-
-
-
-
-
-
-<!---
-Next, make symbolic links of sequences in that folder:
-
-```sh
-ln -s /proj/g2015028/nobackup/single_cell_exercises/sequences/dataset1/G5_Hiseq_R1_001.fastq .
-ln -s /proj/g2015028/nobackup/single_cell_exercises/sequences/dataset1/G5_Hiseq_R2_001.fastq .
-ln -s /proj/g2015028/nobackup/single_cell_exercises/sequences/dataset2/G5_Miseq_R1_001.fastq .
-ln -s /proj/g2015028/nobackup/single_cell_exercises/sequences/dataset2/G5_Miseq_R2_001.fastq .
-```
-
-Now you are almost ready to run assemblies! But before you can start assemblies, you need to load SPAdes module first.  
-To load the SPAdes assembler, type:
-
-```sh
-module load bioinfo-tools
-module load spades/3.1.1
-```  
---->  
+<div>
+ <span style="float:left"><a class="btn btn-primary" href="scg_part2"> Previous page</a></span>
+ <span style="float:right"><a class="btn btn-primary" href="scg_part3_1"> Next page</a></span>
+</div>
 
 
 <!--- 

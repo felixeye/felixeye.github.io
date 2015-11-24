@@ -77,8 +77,8 @@ Ray is an assembler that can be highly parallelized and can therefore be a good 
 >```
 
 
-
-
-
-
+<div>
+ <span style="float:left"><a class="btn btn-primary" href="scg_part3_2"> Previous page</a></span>
+ <span style="float:right"><a class="btn btn-primary" href="scg_part3_4"> Next page</a></span>
+</div>
 

@@ -37,3 +37,9 @@ Have a look at the contigs called *'NODE_7'* and *'NODE_4'*.
 They show some interesting coverage patterns. You can easily find them by going *Goto -> Navigator (or Ctrl-G)*. 
 Then fill in *'NODE_7_'* or *'NODE_4_'* under the 'Goto Feature with this qualifier value' -> Goto. 
 If for any reason you can't type in the contig names in the search box, you should browse the list of contig names at the bottom of Artemis browser and double click on the contig name.
+
+
+<div>
+ <span style="float:left"><a class="btn btn-primary" href="scg_part4_1"> Previous page</a></span>
+ <span style="float:right"><a class="btn btn-primary" href="scg_part4_3"> Next page</a></span>
+</div>

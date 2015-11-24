@@ -65,3 +65,9 @@ java -jar /sw/apps/bioinfo/picard/1.92/milou/SortSam.jar INPUT=G5_vs_contigs.bam
 ```
 
 If you now view the sorted bam file with *ViewSam.jar*, you will see that the contigs appear in order after each other.
+
+
+<div>
+ <span style="float:left"><a class="btn btn-primary" href="scg_part4"> Previous page</a></span>
+ <span style="float:right"><a class="btn btn-primary" href="scg_part4_2"> Next page</a></span>
+</div>

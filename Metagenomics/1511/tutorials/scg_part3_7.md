@@ -50,3 +50,7 @@ After running Blastn, can you identify what organism G5 belongs to?
 
 Now you can go back to the [questions](scg_part3)!
 
+<div>
+ <span style="float:left"><a class="btn btn-primary" href="scg_part3_5"> Previous page</a></span>
+ <span style="float:right"><a class="btn btn-primary" href="scg_part4"> Next page</a></span>
+</div>

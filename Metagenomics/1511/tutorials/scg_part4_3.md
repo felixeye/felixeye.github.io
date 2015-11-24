@@ -55,3 +55,8 @@ is more than 200 bases from the start, or more than than 300 bases from the end.
 Keep in mind that all reads with an alternative alignment isn’t necessarily chimeric in origin. 
 Some reads might be split due to assembly-errors or sequencing errors. If we want to do a better job at finding chimeras we would need more clonal SAGs.
 
+
+<div>
+ <span style="float:left"><a class="btn btn-primary" href="scg_part4_2"> Previous page</a></span>
+ <span style="float:right"><a class="btn btn-primary" href="scg_part4_4"> Next page</a></span>
+</div>

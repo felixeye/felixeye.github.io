@@ -34,9 +34,9 @@ Report the results in the spreadsheet:
 less assembly_metrics/report.txt
 ```
 
-<!---
-For the next step we need to be one folder up from the folder *assembly_metrics*
-```sh
-cd ..
-```
--->
+
+<div>
+ <span style="float:left"><a class="btn btn-primary" href="scg_part3_3"> Previous page</a></span>
+ <span style="float:right"><a class="btn btn-primary" href="scg_part3_5"> Next page</a></span>
+</div>
+

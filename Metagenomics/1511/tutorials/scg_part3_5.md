@@ -53,3 +53,7 @@ For all assemblies, report the completeness in the spreadsheet.
 
 The script looks for unique marker genes that are present in single copies in most bacteria and estimates how complete the genome is based on the marker genes found. Completeness is shown as fractions and you should multiply this with 100 to get the percentage completeness.
 
+<div>
+ <span style="float:left"><a class="btn btn-primary" href="scg_part3_4"> Previous page</a></span>
+ <span style="float:right"><a class="btn btn-primary" href="scg_part3_7"> Next page</a></span>
+</div>

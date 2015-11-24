@@ -17,3 +17,8 @@ This makes it easier to compare large metagenomic data sets and associated funct
 5.2 [Functional analysis in MEGAN](scg_part5_2)  
 
 The questions are listed for the two parts separately, just follow the above links.
+
+<div>
+ <span style="float:left"><a class="btn btn-primary" href="scg_part4_4"> Previous page</a></span>
+ <span style="float:right"><a class="btn btn-primary" href="scg_part5_1"> Next page</a></span>
+</div>

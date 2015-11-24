@@ -78,6 +78,8 @@ Try setting **k-mers to 55, 77, and 99**. To set these k-mers, you need to provi
 ```
 
 
-
-
+<div>
+ <span style="float:left"><a class="btn btn-primary" href="scg_part5_2"> Previous page</a></span>
+ <span style="float:right"><a class="btn btn-primary" href="#"> Next page</a></span>
+</div>
 

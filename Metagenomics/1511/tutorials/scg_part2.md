@@ -70,6 +70,10 @@ __Q2.2:__ Did you notice anything similar/different in the Fastq headers of the 
 How can you identify paired-end reads?  
 
 
+<div>
+ <span style="float:left"><a class="btn btn-primary" href="connectToUppmax"> Previous page</a></span>
+ <span style="float:right"><a class="btn btn-primary" href="scg_part2"> Next page</a></span>
+</div>
 
 <!---
 Illumina produces paired-end reads that always come in pairs and have the same number of reads in each pair.

@@ -54,3 +54,10 @@ Try to say as much as possible.
 
 **Q5.14** Given the estimated completeness of the genome (see 3f), how confident are you about statements regarding the nature of this bacterium?  
 Close MEGAN and return to the terminal.  
+
+
+<div>
+ <span style="float:left"><a class="btn btn-primary" href="scg_part5_1"> Previous page</a></span>
+ <span style="float:right"><a class="btn btn-primary" href="scg_part6"> Next page</a></span>
+</div>
+

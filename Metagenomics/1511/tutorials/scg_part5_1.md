@@ -70,3 +70,8 @@ If so, which taxa (or taxon) is (or are) the source of this contamination?
 **Q5.5** What do you think could be the cause of this contamination?  
 Close MEGAN and return to the terminal.
 
+<div>
+ <span style="float:left"><a class="btn btn-primary" href="scg_part5"> Previous page</a></span>
+ <span style="float:right"><a class="btn btn-primary" href="scg_part5_2"> Next page</a></span>
+</div>
+
