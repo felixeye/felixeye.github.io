@@ -23,7 +23,7 @@ mkdir trimmed
 
 ```sh
 java -jar $TRIMMOMATIC_HOME/trimmomatic.jar PE -phred33 \
--basein G5_${sample}_R1_001.fastq -baseout trimmed/G5_${sample}_${trim}.fastq \
+-basein G5_${sample}_R1_001.fastq -baseout trimmed/G5_${sample}${trim}.fastq \
 ILLUMINACLIP:$TRIMMOMATIC_HOME/adapters/NexteraPE-PE.fa:2:30:10 \
 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
 ```
