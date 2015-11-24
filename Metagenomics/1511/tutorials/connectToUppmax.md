@@ -52,25 +52,26 @@ xclock
 ```
 
 If you see the clock then you should be able to launch GUI-based tools such as MEGAN or Artemis remotely. Close the clock.
+
+<div>
+ <div style="float:left">Previous page</div>
+ <div style="clear:both; float:right">Next page</div>
+</div>
+
+<!---
 Next, before you are able to use a specific bioinformatics tool it needs to be first loaded using the 'module load' command.  
 For example, You can view the list of available modules by typing:  
-
 ```bash
 module avail
 ```
-
 This will list all the basic tools available but you won't see any bioinformatics tools available.  
 Type q to return to the command prompt. To see the bioinformatics tools installed on Milou, type:  
-
 ```bash
 module load bioinfo-tools
 ```
-
 Then type:  
-
 ```bash
 module avail
 ```
-
 Now, you will see the bioinformatics tools installed on Milou that are categorized by the type of main tasks they perform.  
-
+-->

@@ -11,6 +11,9 @@ First, you will run this tool called **rnammer** to predict the regions within a
 Go into the folder containing the assembled contigs and type this command (which you should already be in):  
 
 ```sh
+#Fix some module dependencies (downgrade gcc, openmpi, hmmer)
+module load rnammer/1.2
+#End Fix
 cd ..
 mkdir 16s_blast
 cp assemblies/*.fasta ./16s_blast

@@ -18,7 +18,7 @@ Spades is a prokaryotic genome assembler that was specifically designed to be ab
 * if you work with the **raw** reads  
 
 >```sh
->time spades.py --sc --careful -t 8 -m 24 \
+>time spades.py --sc -t 8 -m 24 \
 >-1 G5_${sample}_R1_001.fastq \
 >-2 G5_${sample}_R2_001.fastq \
 >-o assemblies/Spades
@@ -27,7 +27,7 @@ Spades is a prokaryotic genome assembler that was specifically designed to be ab
 * if you work with the **trimmed** reads  
 
 >```sh
->time spades.py --sc --careful -t 8 -m 24  \
+>time spades.py --sc -t 8 -m 24  \
 >-1 trimmed/G5_${sample}${trim}_1P.fastq \
 >-2 trimmed/G5_${sample}${trim}_2P.fastq \
 >-s trimmed/G5_${sample}${trim}_U.fastq \
