@@ -21,7 +21,7 @@ Type the following command but replace *username* with your login name.
 
 Connect to Uppmax:
 
-```bash
+```sh
 ssh -X username@milou.uppmax.uu.se
 ```
 
@@ -29,25 +29,25 @@ Next, request a compute node for the next 8 hours.
 **Do not repeat this command otherwise you will be using more than 8 cores and other might not be able to work.**  
 Just type it once and see which node you are assigned to.  
 
-```bash
+```sh
 salloc -A g2015028 -t 08:00:00 -p core -n 8 --no-shell --qos=interact &
 ```
 
  Type the following command to see the login node: 
 
-```bash
+```sh
 squeue -u username
 ```
 
 The nodelist column gives you the name of the node that has been reserved for you.  
 Log in to compute node (replace mXX with the actual compute node you are assigned to)  
 
-```bash
+```sh
 ssh -X mXX
 ```
 Make sure that you can launch graphical tools in your node by typing this command:  
 
-```bash
+```sh
 xclock
 ```
 
