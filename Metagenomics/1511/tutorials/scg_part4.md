@@ -9,6 +9,11 @@ As explained during the lectures, the genome amplification process (MDA) results
 Here you will have a look at the 'best' assembly that you managed to obtain, and try to assess the level of bias and chimera formation.
 In order to visualize the coverage of a normal single-cell assembly, you need to map your reads used in the assembly, back to your assembled contigs. You can then visualize the coverage in Artemis. We will also use a tool to inspect potential chimeras and check the insert size using the pairs. 
 
+4.1 [Reads mapping](scg_part4_1)  
+4.2 [Assessing coverage bias](scg_part4_2)  
+4.3 [Detection and inspection of chimeric reads](scg_part4_3)  
+4.4 [Insert size] (scg_part4_4)  
+ 
 Here are the questions that these results should help you answer:
 
 ### Questions

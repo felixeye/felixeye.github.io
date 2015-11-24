@@ -28,7 +28,6 @@ ssh -X username@milou.uppmax.uu.se
 Next, request a compute node for the next 8 hours.  
 **Do not repeat this command otherwise you will be using more than 8 cores and other might not be able to work.**  
 Just type it once and see which node you are assigned to.  
-<!--- Note that the reservation code for Wednesday is g2014179_wed.  -->
 
 ```bash
 salloc -A g2015028 -t 08:00:00 -p core -n 8 --no-shell --qos=interact &
@@ -75,9 +74,3 @@ module avail
 
 Now, you will see the bioinformatics tools installed on Milou that are categorized by the type of main tasks they perform.  
 
-<!---
-```bash
-jobinfo -u *username*
-```
-or this command:
--->
