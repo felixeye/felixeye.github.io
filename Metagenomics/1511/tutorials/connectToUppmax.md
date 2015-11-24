@@ -55,7 +55,7 @@ If you see the clock then you should be able to launch GUI-based tools such as M
 
 <div>
  <span style="float:left">Previous page</span>
- <span style="clear:both; float:right">Next page</span>
+ <span style="float:right">Next page</span>
 </div>
 
 <!---
