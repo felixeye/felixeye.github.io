@@ -16,8 +16,8 @@ In addition, there is a third MiSeq dataset (2x250 bp - dataset 3) that contains
 ## Overview of steps in this exercise
 
 We will have a lunch break. We will split the discussion of results into two parts, one when you have the assembly results and then another one to summarize the whole day. 
+Here is a schematic [Workflow](../slides/scg_workflow.pdf) of what you will be doing.  
 
-0. [Workflow](../slides/scg_workflow.pdf)
 1. [Connecting to UPPMAX](connectToUppmax)  
 2. [Familiarizing with data](scg_part2)  
 3. [Single-cell genome assembly](scg_part3)  
