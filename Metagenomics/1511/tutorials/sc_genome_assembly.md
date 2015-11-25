@@ -17,6 +17,7 @@ In addition, there is a third MiSeq dataset (2x250 bp - dataset 3) that contains
 
 We will have a lunch break. We will split the discussion of results into two parts, one when you have the assembly results and then another one to summarize the whole day. 
 
+0. [Workflow](../slides/scg_workflow.pdf)
 1. [Connecting to UPPMAX](connectToUppmax)  
 2. [Familiarizing with data](scg_part2)  
 3. [Single-cell genome assembly](scg_part3)  
@@ -35,4 +36,9 @@ We will have a lunch break. We will split the discussion of results into two par
 5. [Exploring your single cell genome](scg_part5)  
 5.1 [Contamination analysis in MEGAN](scg_part5_1)  
 5.2 [Functional analysis in MEGAN](scg_part5_2)  
-6. [Analysis of a novel single-cell genome](scg_part6)  
+6. [Analysis of a novel single-cell genome](scg_part6) 
+
+<div>
+ <span style="float:left"><a class="btn btn-primary" href="../schedule"> Previous page</a></span>
+ <span style="float:right"><a class="btn btn-primary" href="connectToUppmax"> Next page</a></span>
+</div> 

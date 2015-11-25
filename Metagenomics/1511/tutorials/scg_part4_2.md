@@ -18,7 +18,6 @@ java -jar /sw/apps/bioinfo/picard/1.92/milou/BuildBamIndex.jar INPUT=G5_vs_conti
 Open artemis with the following command:  
 
 ```sh
-module load artemis/15.0.0
 art &
 ```
 

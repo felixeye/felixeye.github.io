@@ -38,6 +38,9 @@ Based on how many of these genes will be identified, an estimation of genome com
 From the assembly directory and run the following perl script (repeat the command for all prodigal files):
 
 ```sh
+# Fix dep
+module load hmmer/3.1b1-gcc
+# End fix
 perl /proj/g2015028/nobackup/single_cell_exercises/scripts/micomplete.pl \
 -h /proj/g2015028/nobackup/single_cell_exercises/scripts/Bact139.hmm \
 -w /proj/g2015028/nobackup/single_cell_exercises/scripts/Bact139.weights \

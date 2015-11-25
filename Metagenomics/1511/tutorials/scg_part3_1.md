@@ -77,18 +77,18 @@ Now we can check that all softwares have been correctly loaded, please type the 
 module list
 ```
 
+* bioinfo-tools
+* trimmomatic/0.32
 * spades/3.1.1
+* IDBA/1.1.1-384
 * quast/2.3
-* rnammer/1.2
+* prodigal/2.60
+* blast/2.2.29+
 * bwa/0.7.5a
+* picard/1.92
 * artemis/15.0.0
 * MEGAN/4.70.4
-* SeqPrep/2013-11-14
-* prodigal/2.60
-* hmmer/3.1b1-gcc
-* openmpi/1.4.5
-* picard/1.92
-* blast/2.2.29+
+* Ray/2.3.1-mpiio
 
 **Please contact the teachers if one of those softwares do not appear in your list.**
 

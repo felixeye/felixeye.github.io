@@ -12,7 +12,6 @@ A good way to detect contaminants in your assembly, is to compare your contigs t
 To do this, perform the following BLASTn search:
 
 ```sh
-module load blast/2.2.29+
 blastn -query contigs.fasta -db /proj/g2015028/nobackup/single_cell_exercises/databases/nt -evalue 1e-5 -num_threads 8 -out contigs_vs_nt.blastn #[This shouldn’t take more than 4 minutes]
 ```
 
@@ -24,7 +23,6 @@ MEGAN inspects the blastn file for you, and categorizes each contig to a certain
 Enter the following command in your terminal window:  
 
 ```sh
-module load MEGAN/4.70.4
 MEGAN &
 ```
 
