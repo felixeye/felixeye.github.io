@@ -27,3 +27,16 @@ body {
 html {
   overflow-y: scroll;
 }
+
+table th, table td {
+    padding: 6px 13px;
+    border: 1px solid #ddd;
+}
+
+thead tr:nth-child(odd) {
+    background-color: #f8f8f8;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+}

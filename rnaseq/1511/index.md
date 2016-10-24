@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  'Introduction to Bioinformatics Using NGS Data - October 2015'
+title:  'RNAseq course - November 2015'
 ---
  
 
@@ -18,8 +18,9 @@ For more detailed information regarding the location and topics that will be cov
 This information will be handed out during the first day of the course
 
 ## Helpful Things
+[Small tips and tricks for uppmax](tricks)  
 [Linux cheat sheet](files/linux-cheat-sheet.pdf)  
-[UPPMAX cheat sheet](files/uppmax-cheat-sheet.png)
+[UPPMAX cheat sheet](files/uppmax-cheat-sheet.png)  
 [How to create a webexport in your project](https://www.uppmax.uu.se/webexport-guide)  
 
 ## External Resources
