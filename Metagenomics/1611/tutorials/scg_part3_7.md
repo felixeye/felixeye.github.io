@@ -4,6 +4,9 @@ title:  'Part 3: Single cell genome assembly using SPAdes'
 ---
 
 # Part 3: Single cell genome assembly
+---
+
+<p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p>
 
 ## 3.7. Identifying ribosomal RNAs
 
@@ -48,9 +51,14 @@ blastn -db $DB -evalue 1e-6 -num_threads 8 -query G5_${sample}${trim}_IDBA_conti
 
 After running Blastn, can you identify what organism G5 belongs to?
 
-Now you can go back to the [questions](scg_part3)!
+Time to answer some interesting [questions](scg_part3_questions)!
 
 <div>
  <span style="float:left"><a class="btn btn-primary" href="scg_part3_5"> Previous page</a></span>
- <span style="float:right"><a class="btn btn-primary" href="scg_part4"> Next page</a></span>
+ <span style="float:right"><a class="btn btn-primary" href="scg_part3_questions"> Next page</a></span>
 </div>
+
+<!--<div>
+ <span style="float:left"><a class="btn btn-primary" href="scg_part3_5"> Previous page</a></span>
+ <span style="float:right"><a class="btn btn-primary" href="scg_part4"> Next page</a></span>
+</div>-->

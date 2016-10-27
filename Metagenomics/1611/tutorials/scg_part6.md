@@ -6,6 +6,8 @@ title:  'Part 6: Analysis of a novel single cell'
 # Part 6: Analysis of a novel single cell genome
 ---
 
+<p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p>
+
 Now that you have worked with several single cell genome datasets, you will be able to play around with the analysis you did before for a mystery single cell (dataset3). 
 With the knowledge that you have acquired during this course, you can try to:
 
@@ -34,12 +36,11 @@ We suggest that you start with question 1 and think of the steps necessary to ob
 
 If you have more time you can play around with the other optional questions and decide where you want to focus. There are also a couple of optional exercises you can try for the different steps you went through. Choose the part you are most interested in.
 
-### Questions
----
+## Questions:  
 
 **Q7.1** What is the taxonomic affiliation of the SAG?  
 
-Optional exercises
+**Optional questions**
 
 Biologically oriented questions:
 
@@ -48,9 +49,10 @@ Biologically oriented questions:
 Bioinformatically oriented questions:
 
 **Q7.3** Did you notice any major differences between the assemblies using different assembler, setting or input data (trimmed/untrimmed reads)? To make this question more specific you can look into the optional exercises below where some assembly optimization options are suggested.  
+
 **Q7.4** Do you think the number of reads are enough to obtain a good assembly or should more sequences be obtained?  
 
-## Optional exercises
+## Optional exercises:  
 
 Here is a list of optional exercises collected in one place, from the various parts of the tutorial that you went through.
 

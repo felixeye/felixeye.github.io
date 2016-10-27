@@ -4,6 +4,9 @@ title:  'Part 5: Exploring your single cell genome'
 ---
 
 # Part 5: Exploring your single cell genome
+---
+
+<p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p>
 
 ## 5.2 Functional analysis of predicted protein content in MEGAN
 
@@ -27,7 +30,7 @@ Open MEGAN and import the BLASTp file as before but this time you need to select
 Name your MEGAN file *'contigs.prodigal_vs_db.rma'*.
 Explore the taxonomic classification using functions described in *5.1*.
 
-### Questions
+## Questions  
 
 **Q5.6** Can you find the taxa (or taxon) that you identified as contamination in 5.1?  
 Why (not)?  

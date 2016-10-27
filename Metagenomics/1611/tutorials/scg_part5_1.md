@@ -4,6 +4,9 @@ title:  'Part 5: Exploring your single cell genome'
 ---
 
 # Part 5: Exploring your single cell genome
+---
+
+<p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p>
 
 ## 5.1 Contamination analysis in MEGAN
 
@@ -42,7 +45,7 @@ Right click 'root' and hit 'Uncollapse subtree'. This command will cause MEGAN t
 in this case the root. The sizes of the nodes correspond to the relative amounts of contigs assigned to them.
 
 
-### Questions
+## Questions  
 
 **Q5.1a** Find the node 'Bacteria'. How much contigs are assigned to this node?  
 If you don't see 'Bacteria' you can click on *Tree->Collapse* At *Taxonomic Level->Kingdom* and you should see the node.  

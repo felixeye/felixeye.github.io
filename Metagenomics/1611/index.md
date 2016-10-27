@@ -5,6 +5,7 @@ title:  'Metagenomics Workshop - November 2016'
  
 
 # Introduction to Metagenomics and Single Cell analysis
+---
 
 Held in Uppsala November 22-23, 2016.  
 
@@ -23,13 +24,13 @@ Held in Uppsala November 22-23, 2016.
 
 ## Helpful Things
 
-[Linux cheat sheet](common/images/linux-cheat-sheet.pdf)  
-[UPPMAX cheat sheet](common/images/uppmax-cheat-sheet.png)  
+[Linux cheat sheet](../common/images/linux-cheat-sheet.pdf)  
+[UPPMAX cheat sheet](../common/images/uppmax-cheat-sheet.png)  
 [How to create a webexport in your project](https://www.uppmax.uu.se/webexport-guide)  
 
 ## External Resources
 
-[Mac keyboard layouts](common/mac-keyboard)  
+[Mac keyboard layouts](../common/mac-keyboard)  
 [IGV (Integrative Genomics Viewer) Home](https://www.broadinstitute.org/igv/)  
 [Samtools Home](http://www.htslib.org/)  
 [BWA Home](http://bio-bwa.sourceforge.net/)  

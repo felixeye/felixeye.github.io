@@ -4,6 +4,9 @@ title:  'Part 5: Exploring your single cell genome'
 ---
 
 # Part 5: Exploring your single cell genome
+---
+
+<p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p>
 
 Now that you are fairly confident about the quality of your assembled single cell genome, 
 you are going to have a look at the actual content of the assembly using the program MEGAN. 

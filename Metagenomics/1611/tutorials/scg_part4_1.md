@@ -4,8 +4,11 @@ title:  'Part 4: Coverage plotting, chimera detection and inspection'
 ---
 
 # Part 4: Coverage plotting, chimera detection and inspection
+---
 
-## 4.1. Reads mapping
+<p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p>
+
+## 4.1. Reads mapping  
 
 Mapping can be done with various read-mappers such as *bwa, bowtie, gsnap* etc... You will be using bwa since it is fast and it can also map partial reads back to our reference.  
 

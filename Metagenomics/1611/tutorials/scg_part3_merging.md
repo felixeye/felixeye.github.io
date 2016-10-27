@@ -4,6 +4,9 @@ title:  'Part 3: Single cell genome assembly using SPAdes'
 ---
 
 # Part 3: Single cell genome assembly
+---
+
+<p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p>
 
 ## 3.x.x Merging reads with SeqPrep
 

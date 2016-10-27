@@ -6,6 +6,8 @@ title:  'Part 6: Comparing MiSeq vs. HiSeq data'
 # Part 7: Analysis of a novel single cell genome (bonus exercise)
 ---
 
+<p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p>
+
 Now that you have worked with several single cell genome datasets, you will be able to play around with a bonus dataset of a mystery single cell (dataset3). 
 With the knowledge that you have acquired during this course, try to:
 
@@ -173,12 +175,15 @@ Record the results after the assemblies and assembly statistics are calculated.
 </table>
 </p>
 
-### Questions
----
+## Questions
 
 **Q7.1** Did you notice the major differences between the two assemblies (untrimmed reads)?  
 What about the differences between two assemblies for trimmed reads?  
+
 **Q7.2** What do you think happened by setting a longer k-mer sizes than default settings?  
+
 **Q7.3** Do you think the number of reads are enough to obtain a good assembly or if more sequences should be obtained?  
+
 **Q7.4** What is the taxonomic affiliation of the SAG?  
+
 **Q7.5** Can you say anything about the metabolism based on the assembled data?  

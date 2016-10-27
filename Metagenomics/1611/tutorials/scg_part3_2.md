@@ -4,8 +4,11 @@ title:  'Part 3: Single cell genome assembly using SPAdes'
 ---
 
 # Part 3: Single cell genome assembly
+---
 
-## 3.2. Pre-processing
+<p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p>
+
+## 3.2 Pre-processing
 
 Before assembly you can do several pre-processing steps. Here we will focus on quality trimming of the reads with the software _Trimmomatic_ . Keep in mind which dataset you will make assemblies for, perhaps you do not need to trim your dataset.
 
@@ -28,9 +31,9 @@ ILLUMINACLIP:$TRIMMOMATIC_HOME/adapters/NexteraPE-PE.fa:2:30:10 \
 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
 ```
 
-The previous command create 4 different files in the folder *trimmed*:  
+The previous command create 4 different files in the folder called *trimmed*:  
 * *G5_${sample}_Trimmomatic_1P.fastq*: paired forward reads  
-* *G5_${sample}_Trimmomatic_2P.fastq*: paired forward reads  
+* *G5_${sample}_Trimmomatic_2P.fastq*: paired reverse reads  
 * *G5_${sample}_Trimmomatic_1U.fastq*: unpaired forward reads  
 * *G5_${sample}_Trimmomatic_2U.fastq*: unpaired reverse reads  
 

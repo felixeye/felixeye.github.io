@@ -4,6 +4,9 @@ title:  'Part 3: Single cell genome assembly using SPAdes'
 ---
 
 # Part 3: Single cell genome assembly
+---
+
+<p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p>
 
 We will run three different assemblers on the data. You will choose either HiSeq or MiSeq dataset and trim it or use raw reads depending on how you organize your group. Make sure your variables (sample and trimming) are set properly. You will use one dataset so you can have one assembly folder and create three subfolders for the Ray, IDBA and Spades results. You do not need to create the folders, the assemblers will do that.
 
@@ -13,7 +16,7 @@ mkdir -p assemblies/
 
 ## 3.3a. Assemble your data Using SPAdes
 
-Spades is a prokaryotic genome assembler that was specifically designed to be able to handle uneven coverage in single cell datasets. It works with Ion Torrent, PacBio and Illumina paired-end, mate-pairs and single reads. Spades is based on a de Bruijn graph and involves removing graph structures that result from erroneus reads. It uses multiple kmer to optimize assembly of different regions. You can read up about Spades at the [website](http://bioinf.spbau.ru/spades). Spades offer excellent user support.
+Spades is a prokaryotic genome assembler that was specifically designed to be able to handle uneven coverage in single cell datasets. It works with Ion Torrent, PacBio and Illumina paired-end, mate-pairs and single reads. Spades is based on a de Bruijn graph and involves removing graph structures that result from erroneus reads. It uses multiple kmer to optimize assembly of different regions. You can read up about Spades at their [website](http://bioinf.spbau.ru/spades). Spades offer excellent user support.
 
 * if you work with the **raw** reads  
 

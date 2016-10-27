@@ -4,13 +4,14 @@ title:  'Part 4: Coverage plotting, chimera detection and inspection'
 ---
 
 # Part 4: Coverage plotting, chimera detection and inspection
-
-## 4.3 Detection and inspection of chimeric reads
 ---
 
+<p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p>
+
+## 4.3 Detection and inspection of chimeric reads  
+
 The MDA reaction will produce chimeric DNA in several ways. 
-If you want to get a more detailed picture of how this is happening, a very good starting point is the Lasken et al. paper from 2007. 
-See http://www.biomedcentral.com/1472-6750/7/19
+If you want to get a more detailed picture of how this is happening, a very good starting point is the [Lasken et al. paper from 2007](http://www.biomedcentral.com/1472-6750/7/19). 
 One issue with single-cell data is that chimeric DNA will be formed and sequenced just like any other DNA. 
 This will be assembled into chimeric contigs which can be quite hard to distinguish from correct contigs. 
 One way of getting around this is by using multiple SAGs from the same organism. 

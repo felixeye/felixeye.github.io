@@ -4,6 +4,7 @@ title:  'Schedule'
 ---
 
 # Schedule
+---
 
 #### This course is given at Navet (E10) at BMC. Click the heading of a topic to see the lecture slides or lab instructions.
 

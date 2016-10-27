@@ -4,6 +4,7 @@ title:  'Precourse Material'
 ---
 
 # Pre-course Material
+---
 
 **Unix/Linux Tutorial**
 
@@ -21,8 +22,8 @@ You should at least go through the exercises in the tutorial, no need to know it
 
 **Using UPPMAX**
 
-* Make sure that you can login to UPPMAX from your computer before the course starts. Follow these instructions:  
-[https://www.uppmax.uu.se/getting-started-first-login-to-uppmax](https://www.uppmax.uu.se/getting-started-first-login-to-uppmax)  
+* Make sure that you can login to UPPMAX from your computer before the course starts. Follow these instructions: 
+[http://www.uppmax.uu.se/support/user-guides/guide--first-login-to-uppmax/](http://www.uppmax.uu.se/support/user-guides/guide--first-login-to-uppmax/) 
 
 * It is possible to use Mac, Unix/Linux or Windows. (Windows will require installing a special program that you'll find in the instructions.)  
 

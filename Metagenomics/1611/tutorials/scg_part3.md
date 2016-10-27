@@ -4,14 +4,21 @@ title:  'Part 3: Single cell genome assembly using SPAdes'
 ---
 
 # Part 3: Single cell genome assembly
+---
+
+<p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p>
 
 <p>
-In this part of the course, you will start doing assemblies of 'real' (but reduced) single cell genome datasets. We will compare two single cell specific assemblers, namely Spades and IDBA-UD, and one 'general-purpose' assembler called Ray (which were introduced by Kasia). The idea is that you will be able to compare the results of these different assemblers on two kinds of datasets (HiSeq and MiSeq), as well as different pre-treatments ('trimming'). You will also have a chance to explore how to decide which assembly is the best ('assembly metrics'), as there is no simple answer to this question.
-Out of the total 12 assemblies we like you to compare, we suggest one person does only 3 on one of the datasets and pre-treatments. This way you can focus and skip handling too many folders and files. Assembly is also relatively time-consuming (although we have prepared reduced datasets for the tutorial to keep the times reasonable). So if you work as a group of 4 you can collect the results in one summary table we will look at. You will find a list of these tables below.
-</p>
+In this part of the course, you will start doing assemblies of 'real' (but reduced) single cell genome datasets. We will compare two single cell specific assemblers, namely Spades and IDBA-UD, and one 'general-purpose' assembler called Ray (which were introduced during the morning). The idea is that you will be able to compare the results of these different assemblers on two kinds of datasets (HiSeq and MiSeq), as well as different pre-treatments ('trimming'). You will also have a chance to explore how to decide which assembly is the best ('assembly metrics'), as there is no simple answer to this question.  
+Out of the total 12 assemblies we like you to compare, we suggest :
+- Talk to each other to form a group of maximum 4 persons  
+- Pick a group numer and write your name in the corresponding spreadsheet (see below)  
+- split the work, optimally one person does only 3 assemblies on one of the datasets and pre-treatments (1 table in the spreadsheet)  
 
-Actual tables to be filled in are provided in Google Docs and the links can be found below. 
-You should talk to each other to form the groups and split the work. Do not worry if you miss something, we will collect result from all groups and discuss it together.  
+This way you can focus and skip handling too many folders and files. Assembly is also relatively time-consuming (although we have prepared reduced datasets for the tutorial to keep the times reasonable).  
+Actual tables to be filled in are provided in Google Docs and the links can be found below.  
+Do not worry if you miss something, we will collect result from all groups and discuss it together.
+</p>
 
 [Group 1:](https://docs.google.com/spreadsheet/ccc?key=0AuNHyFPCsxthdGRKMXJwdF9jVDMzX2lGMkdJSDdOcnc&usp=sharing)  
 [Group 2:](https://docs.google.com/spreadsheet/ccc?key=0AuNHyFPCsxthdC0tdzFySDFyaDNIdEh4M01xMXFQb3c&usp=sharing)  
@@ -35,10 +42,10 @@ You should talk to each other to form the groups and split the work. Do not worr
 These steps will help you obtain results to think about the following questions:
 
 
-## Questions:
+## Questions:  
 
 
-**Q3.1:** Did you notice how many reads were discarded in the pre-processing? Do the numbers differ between the Miseq and Hiseq datasets? You can use the group google doc to see the results for all the datasets.  
+**Q3.1:** Did you notice how many reads were discarded in the pre-processing? Do the numbers differ between the Miseq and Hiseq datasets? You can use the group google spreadsheet to see the results for all the datasets.  
 
 **Q3.2:** Did you notice any differences between HiSeq and MiSeq data and the different assemblers?  
 

@@ -4,6 +4,7 @@ title:  'Travel'
 ---
 
 # Travel Information
+---
 
 **Travel with Uppsala city buses:**  
 Pay your bus ticket with your mobile phone: send a text message, **UV** to **72472** (~25 SEK)

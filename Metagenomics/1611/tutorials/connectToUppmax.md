@@ -3,9 +3,11 @@ layout: default
 title:  'Connecting to UPPMAX'
 ---
 
-# Part 1: Connecting to UPPMAX and reserving nodes
+# Part 1: Connecting to UPPMAX  
+---
 
 Before moving on to the exercises, you will first need to connect to Milou on Uppmax through ssh.   
+
 **Instructions for mac**  
 If you have a Mac, first check if you will be able to use X forwarding. 
 It is included in older macs but was removed in the latest releases where you need to install it (see: [http://support.apple.com/en-us/HT201341](http://support.apple.com/en-us/HT201341)). 
@@ -19,39 +21,66 @@ You will be using half a node (*8 cores*) per person. This means you will end up
 It is essential to log in with X forwarding (-X) option to be able to display graphical interfaces across remote computers.
 Type the following command but replace *username* with your login name.  
 
-Connect to Uppmax:
+1. Connect to Uppmax:
 
 ```sh
 ssh -X username@milou.uppmax.uu.se
 ```
 
-Next, request a compute node for the next 8 hours.  
-**Do not repeat this command otherwise you will be using more than 8 cores and other might not be able to work.**  
-Just type it once and see which node you are assigned to.  
+2. The next command will reserve a compute node for *the next 8 hours*.  
+**The following command should be run only once a day otherwise you will be using more than 8 cores and others might not be able to connect.  
+Go to the next step if you already run step 2 today**  
 
 ```sh
 salloc -A g2015028 -t 08:00:00 -p core -n 8 --no-shell --qos=interact &
 ```
 
- Type the following command to see the login node: 
+3. Type the following command to see the node you are affected to: 
 
 ```sh
 squeue -u username
 ```
 
-The nodelist column gives you the name of the node that has been reserved for you.  
-Log in to compute node (replace mXX with the actual compute node you are assigned to)  
+4. The *nodelist* column gives you the name of the node that has been reserved for you.  
+To log in to compute node run the following command (replace *mXX* with the actual compute node you are assigned to)  
 
 ```sh
 ssh -X mXX
 ```
-Make sure that you can launch graphical tools in your node by typing this command:  
+5. Make sure that you can launch graphical tools in your node by typing this command:  
 
 ```sh
 xclock
 ```
 
 If you see the clock then you should be able to launch GUI-based tools such as MEGAN or Artemis remotely. Close the clock.
+
+6. Load all necessary softwares to complete all exercices
+```sh
+source /proj/g2015028/nobackup/single_cell_exercises/scripts/modules_load
+```
+
+Now we can check that all softwares have been correctly loaded, please type the following command in your terminal and check that all element of the list below is listed.  
+
+```sh
+module list
+```
+
+* bioinfo-tools
+* trimmomatic/0.32
+* spades/3.1.1
+* IDBA/1.1.1-384
+* quast/2.3
+* prodigal/2.60
+* blast/2.2.29+
+* bwa/0.7.5a
+* picard/1.92
+* artemis/15.0.0
+* MEGAN/4.70.4
+* Ray/2.3.1-mpiio
+
+**Please contact the teachers if one of those softwares do not appear in your list.**
+
 
 <div>
  <span style="float:left"><a class="btn btn-primary" href="sc_genome_assembly"> Previous page</a></span>

@@ -4,9 +4,11 @@ title:  'Part 3: Single cell genome assembly using SPAdes'
 ---
 
 # Part 3: Single cell genome assembly
+---
+
+<p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p>
 
 ## 3.5. Gene prediction using Prodigal
-
 
 Prodigal is a tool that can identify open reading frames (ORFs) in microbial genomes (bacteria or archaea). 
 In this exercise, you will learn how to use Prodigal to predict ORFs and to prepare them for running Blastp later.  

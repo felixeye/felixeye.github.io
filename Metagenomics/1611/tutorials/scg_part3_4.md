@@ -4,9 +4,11 @@ title:  'Part 3: Single cell genome assembly using SPAdes'
 ---
 
 # Part 3: Single cell genome assembly
+---
+
+<p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p>
 
 ## 3.4. Assessing assembly quality using Quast
-
 
 After assembling the reads into contigs, you will use this tool called 'Quast' to calculate the basic metrics such as the length of largest contig, N50, etc.  
 To run 'Quast', first we will create a link to the different contig files in the assembly folder. 
