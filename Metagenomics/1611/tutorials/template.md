@@ -7,7 +7,8 @@ title:  'Template title'
 ---
 
 <div class="alert alert-info">
-  <strong>Info!</strong> If you get disconnected from Uppmax <a class="btn btn-primary" href="lostConnection">click here</a> to know how to get back to it.
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Info!</strong> If you get disconnected from Uppmax <a href="lostConnection"><strong>click here</strong></a> to know how to get back to it.
 </div>
 
 Tutorial steps 1

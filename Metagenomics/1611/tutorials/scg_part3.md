@@ -6,7 +6,11 @@ title:  'Part 3: Single cell genome assembly using SPAdes'
 # Part 3: Single cell genome assembly
 ---
 
-<p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p>
+<!-- <p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p> -->
+<div class="alert alert-info">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Info!</strong> If you get disconnected from Uppmax <a href="lostConnection"><strong>click here</strong></a> to know how to get back to it.
+</div>
 
 <p>
 In this part of the course, you will start doing assemblies of 'real' (but reduced) single cell genome datasets. We will compare two single cell specific assemblers, namely Spades and IDBA-UD, and one 'general-purpose' assembler called Ray (which were introduced during the morning). The idea is that you will be able to compare the results of these different assemblers on two kinds of datasets (HiSeq and MiSeq), as well as different pre-treatments ('trimming'). You will also have a chance to explore how to decide which assembly is the best ('assembly metrics'), as there is no simple answer to this question.  

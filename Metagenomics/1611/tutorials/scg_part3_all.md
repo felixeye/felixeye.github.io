@@ -6,7 +6,11 @@ title:  'Part 3: Single cell genome assembly using SPAdes'
 # Part 3: Single cell genome assembly using SPAdes
 ---
 
-<p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p>
+<!-- <p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p> -->
+<div class="alert alert-info">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Info!</strong> If you get disconnected from Uppmax <a href="lostConnection"><strong>click here</strong></a> to know how to get back to it.
+</div>
 
 <p>
 In this part of the course, you will start doing assemblies of 'real' (but reduced) single cell genome datasets using the assembler SPAdes (which was introduced by Kasia). 

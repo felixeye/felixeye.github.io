@@ -6,7 +6,11 @@ title:  'Part 6: Comparing MiSeq vs. HiSeq data'
 # Part 7: Analysis of a novel single cell genome (bonus exercise)
 ---
 
-<p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p>
+<!-- <p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p> -->
+<div class="alert alert-info">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Info!</strong> If you get disconnected from Uppmax <a href="lostConnection"><strong>click here</strong></a> to know how to get back to it.
+</div>
 
 Now that you have worked with several single cell genome datasets, you will be able to play around with a bonus dataset of a mystery single cell (dataset3). 
 With the knowledge that you have acquired during this course, try to:

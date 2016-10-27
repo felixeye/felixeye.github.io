@@ -6,7 +6,11 @@ title:  'Part 3: Single cell genome assembly using SPAdes'
 # Part 3: Single cell genome assembly
 ---
 
-<p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p>
+<!-- <p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p> -->
+<div class="alert alert-info">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Info!</strong> If you get disconnected from Uppmax <a href="lostConnection"><strong>click here</strong></a> to know how to get back to it.
+</div>
 
 We will run three different assemblers on the data. You will choose either HiSeq or MiSeq dataset and trim it or use raw reads depending on how you organize your group. Make sure your variables (sample and trimming) are set properly. You will use one dataset so you can have one assembly folder and create three subfolders for the Ray, IDBA and Spades results. You do not need to create the folders, the assemblers will do that.
 

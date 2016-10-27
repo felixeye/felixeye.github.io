@@ -6,7 +6,11 @@ title:  'Part 4: Coverage plotting, chimera detection and inspection'
 ## 4.x Assessing coverage bias in Artemis
 ---
 
-<p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p>
+<!-- <p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p> -->
+<div class="alert alert-info">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Info!</strong> If you get disconnected from Uppmax <a href="lostConnection"><strong>click here</strong></a> to know how to get back to it.
+</div>
 
 To view the reads mapped back to our contigs you can use artemis. In order to load your BAM file, you must first index it.  
 You can do this with picard-tools BuildBamIndex:

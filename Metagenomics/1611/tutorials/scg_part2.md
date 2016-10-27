@@ -6,7 +6,11 @@ title:  'Part 2: Familiarizing yourself with the data'
 # Part 2: Familiarizing yourself with the data  
 ---
 
-<p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p>
+<!-- <p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p> -->
+<div class="alert alert-info">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Info!</strong> If you get disconnected from Uppmax <a href="lostConnection"><strong>click here</strong></a> to know how to get back to it.
+</div>
 
 It is important to be able to recognize what sequence data looks like and how to convert them to different formats to be able to utilize various bioinformatics tools for data analysis. 
 The files provided for your analysis are in _Fastq format_, and these are so-called _raw reads_&nbsp;. 
