@@ -50,8 +50,9 @@ in this case the root. The sizes of the nodes correspond to the relative amounts
 **Q5.1a** Find the node 'Bacteria'. How much contigs are assigned to this node?  
 If you don't see 'Bacteria' you can click on *Tree->Collapse* At *Taxonomic Level->Kingdom* and you should see the node.  
 
-**Q5.1b** How many contigs are assigned to this node and all of its subnodes in total?
-*Q5.1c** Which subnode of 'Bacteria' contains all of the remaining bacterial contigs not assigned to 'Bacteria'?  
+**Q5.1b** How many contigs are assigned to this node and all of its subnodes in total?  
+
+**Q5.1c** Which subnode of 'Bacteria' contains all of the remaining bacterial contigs not assigned to 'Bacteria'?  
 There are two special nodes displayed: 'Not assigned' and 'No hits'. 
 The 'No hits' node contains all the contigs that BLASTn could not find a significant hit for in the nt database. 
 The 'Not assigned' node contains contigs for which BLASTn did find a hit for in nt, but MEGAN could not confidently assign it to a taxonomic node.  

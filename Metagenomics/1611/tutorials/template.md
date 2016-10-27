@@ -6,7 +6,9 @@ title:  'Template title'
 # Template title 
 ---
 
-<p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p>
+<div class="alert alert-info">
+  <strong>Info!</strong> If you get disconnected from Uppmax <a class="btn btn-primary" href="lostConnection">click here</a> to know how to get back to it.
+</div>
 
 Tutorial steps 1
 

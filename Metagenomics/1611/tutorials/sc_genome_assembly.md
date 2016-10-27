@@ -6,7 +6,7 @@ title:  'Single Cell Genomics Tutorial'
 # Introduction: Single Cell Genomics Tutorial
 ---
 
-<p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p>
+<!-- <p class="bg-warning">If you get disconnected from Uppmax [click here](lostConnection) to know how to get back </p> -->
 
 <p>Single cell genomics is an emerging technology that allows one to explore the genome sequence of individual cells. 
 During this tutorial you will work with real single cell genome data from a single cell that was isolated from a hot spring in Yellowstone National Park (USA). 
@@ -21,10 +21,10 @@ In addition, there is a third MiSeq dataset (2x250 bp - dataset 3) that contains
 We will have a lunch break :-). We will split the discussion of results into two parts, one when you have the assembly results and then another one to summarize the whole day. 
 Here is a schematic [Workflow](../common/slides/scg_workflow.pdf) of what you will be doing.  
 
-1. [Connecting to UPPMAX and creating working directory](connectToUppmax)  
+1. [Connecting to UPPMAX](connectToUppmax)  
 2. [Familiarizing with data](scg_part2)  
 3. [Single-cell genome assembly](scg_part3)  
-3.1. [Organize working folder](scg_part3_1)
+3.1. [Organize working folder](scg_part3_1)  
 3.2 [Pre-processing](scg_part3_2)  
 3.3 [Assembly](scg_part3_3)  
 3.4 [Assessing assembly quality using Quast](scg_part3_4)  
