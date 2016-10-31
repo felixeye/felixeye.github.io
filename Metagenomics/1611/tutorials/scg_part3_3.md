@@ -18,7 +18,7 @@ We will run three different assemblers on the data. You will choose either HiSeq
 mkdir -p assemblies/
 ```
 
-## 3.3a. Assemble your data Using SPAdes
+## 3.3a Assemble your data Using SPAdes
 
 Spades is a prokaryotic genome assembler that was specifically designed to be able to handle uneven coverage in single cell datasets. It works with Ion Torrent, PacBio and Illumina paired-end, mate-pairs and single reads. Spades is based on a de Bruijn graph and involves removing graph structures that result from erroneus reads. It uses multiple kmer to optimize assembly of different regions. You can read up about Spades at their [website](http://bioinf.spbau.ru/spades). Spades offer excellent user support.
 
@@ -47,7 +47,7 @@ Record the time in the spreadsheet table.
 In general, typing the command ```time``` before other commands will help you check how long the computation took.*
 
 
-## 3.3b. Assemble your data Using IDBA-UD
+## 3.3b Assemble your data Using IDBA-UD
 
 IDBA offers a collection of assemblers of which IDBA-UD was designed to handle data with uneven coverage depth. It is also a de Bruijn graph based assembler that iterates over mutliple kmers. You can find the website [here](http://i.cs.hku.hk/~alse/hkubrg/projects/idba_ud/) and although manual is rather limited, there is a google group offering support. 
 
@@ -67,7 +67,7 @@ IDBA-UD does not take the quality files and in the first step you have to conver
 >time idba_ud -r trimmed/G5_${sample}${trim}_idba_input.fa -o assemblies/IDBA${trim} --maxk 124 
 >```
 
-## 3.3c. Assemble your data Using Ray
+## 3.3c Assemble your data Using Ray
 
 Ray is an assembler that can be highly parallelized and can therefore be a good option in terms of running times, especially if you have access to large number of CPUs on a computer cluster. Memory can be another limiting factor when running assemblies for large datasets. We did not do a comparison here to check memory usage for these prepared datasets but that is another thing to keep in mind for your future datasets. Ray also has a version for metagenomes but not for the single cell genomes characterized by the extreme coverage differences, so in this case it surves the purpose of a regular assembler used for comparison with the two specialized assemblers.
 

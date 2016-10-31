@@ -40,7 +40,7 @@ You should talk to each other to form the groups and make sure that you work in 
 [Group 8:](https://docs.google.com/spreadsheets/d/1Q3QBvPYzQ1kFHjWu0O5Jf1wgSH-9sxMrcndoLlNW92Y/edit?usp=sharing)  
 
 
-## 3.1a. Preparing your data
+## 3.1a Preparing your data
 
 The following set of commands are to be typed in your compute node (for example mXX - look up using ```jobinfo -u username``` command). 
 Make sure you are typing them in the compute node and not log in node. Go back to Part 1 to check how to log in to your compute node.  
@@ -106,7 +106,7 @@ cd ~/single_cell_exercises/dataset2
 source /proj/g2015028/nobackup/single_cell_exercises/modules_load
 ```
 
-## 3.1b. Merging reads with SeqPrep
+## 3.1b Merging reads with SeqPrep
 
 **This part is only for the ones that will work on Merged reads. Skip this if you do the assembly on the raw reads**  
 To merge read pairs that have significant overlaps, we will use the tool called *'SeqPrep'*. 
@@ -126,7 +126,7 @@ for overlaps with some mismatches to be counted. It can also remove adapter sequ
 
 
 
-## 3.1c. Assemble your data Using SPAdes
+## 3.1c Assemble your data Using SPAdes
 
 Make a folder for SPAdes assemblies: 
 
@@ -178,7 +178,7 @@ This flag uses *'bowtie'* tool to map the reads back to the contigs and check fo
 This results in longer assembly times than not using the *'--careful'* flag.
 
 
-## 3.2. Assessing assembly quality using Quast
+## 3.2 Assessing assembly quality using Quast
 
 
 After assembling the reads into contigs, you will use this tool called 'Quast' to calculate the basic metrics such as the length of largest contig, N50, etc.  
@@ -203,7 +203,7 @@ The summary file containing the stats is 'report.txt'. You should see the assemb
 
 Report the results in the spreadsheet.
 
-## 3.3. Gene prediction using Prodigal
+## 3.3 Gene prediction using Prodigal
 
 
 Prodigal is a tool that can identify open reading frames (ORFs) in microbial genomes (bacteria or archaea). 
@@ -225,7 +225,7 @@ Can you count how many genes are predicted by Prodigal?
 *Hint: Use the example given in the Part 1 to count the number of genes (look for a repeating pattern in the file and search for that pattern).* 
 Tabulate the results in the spreadsheet.
 
-## 3.4. Running completeness estimates
+## 3.4 Running completeness estimates
 
 
 Of course, you will be interested how 'complete' your assembly is. In order to determine completeness, we make use of an in-house script that checks for the presence of a number of universally conserved genes. 
@@ -251,7 +251,7 @@ The script looks for unique marker genes that are present in single copies in mo
 
 
 
-## 3.5. Identifying your cell
+## 3.5 Identifying your cell
 
 First, you will run this tool called 'rnammer' to predict the regions within assembled contigs that contain ribosomal RNA sequences (rRNA), such as 16S, 23S, and 5S rRNA sequences.  
 Go into the folder containing the assembled contigs and type this command:  

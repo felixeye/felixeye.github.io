@@ -12,7 +12,7 @@ title:  'Part 3: Single cell genome assembly using SPAdes'
   <strong>Info!</strong> If you get disconnected from Uppmax <a href="lostConnection"><strong>click here</strong></a> to know how to get back to it.
 </div>
 
-## 3.1. Organizing working folder
+## 3.1 Organizing working folder
 
 The following set of commands are to be typed in your compute node (for example mXX - look up using ```jobinfo -u username``` command). 
 Make sure you are typing them in the compute node and not log in node. Go back to [Part 1](connectToUppmax) to check how to log in to your compute node.  

@@ -12,7 +12,7 @@ title:  'Part 3: Single cell genome assembly using SPAdes'
   <strong>Info!</strong> If you get disconnected from Uppmax <a href="lostConnection"><strong>click here</strong></a> to know how to get back to it.
 </div>
 
-## 3.7. Identifying ribosomal RNAs
+## 3.7 Identifying ribosomal RNAs
 
 First, you will run this tool called **rnammer** to predict the regions within assembled contigs that contain ribosomal RNA sequences (rRNA), such as 16S, 23S, and 5S rRNA sequences.  
 Go into the folder containing the assembled contigs and type this command (which you should already be in):  

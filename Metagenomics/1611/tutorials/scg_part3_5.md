@@ -12,7 +12,7 @@ title:  'Part 3: Single cell genome assembly using SPAdes'
   <strong>Info!</strong> If you get disconnected from Uppmax <a href="lostConnection"><strong>click here</strong></a> to know how to get back to it.
 </div>
 
-## 3.5. Gene prediction using Prodigal
+## 3.5 Gene prediction using Prodigal
 
 Prodigal is a tool that can identify open reading frames (ORFs) in microbial genomes (bacteria or archaea). 
 In this exercise, you will learn how to use Prodigal to predict ORFs and to prepare them for running Blastp later.  
@@ -35,7 +35,7 @@ Can you count how many genes are predicted by Prodigal?
 *Hint: Use the example given in the Part 1 to count the number of genes (look for a repeating pattern in the file and search for that pattern using grep).* 
 Tabulate the results in the spreadsheet.
 
-## 3.6. Running completeness estimates
+## 3.6 Running completeness estimates
 
 
 Of course, you will be interested to know how 'complete' is your assembly. In order to determine completeness, we make use of an in-house script that checks for the presence of a number of universally conserved genes. 

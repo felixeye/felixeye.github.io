@@ -95,3 +95,7 @@ sample=Miseq
 trim=_Trimmomatic
 cd ~/single_cell_exercises/dataset2
 ```
+
+<div>
+ <span style="float:left"><a class="btn btn-primary" onclick="javascript:history.go(-1)"> Previous page</a></span>
+</div>
