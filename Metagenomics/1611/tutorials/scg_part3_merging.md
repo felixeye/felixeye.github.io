@@ -29,3 +29,8 @@ SeqPrep -q 30 -f G5_${sample}_1.fastq -r G5_${sample}_2.fastq \
 
 Note that SeqPrep merges read pairs if overlaps between the read pairs are identified. Quality threshold of 30, for example, can be specified by ```-q 30``` flag 
 for overlaps with some mismatches to be counted. It can also remove adapter sequences optionally.  
+
+
+<div>
+ <span style="float:left"><a class="btn btn-primary" onclick="javascript:history.go(-1)"> Previous page</a></span>
+</div>
