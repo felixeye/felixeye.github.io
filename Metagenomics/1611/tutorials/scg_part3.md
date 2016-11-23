@@ -15,6 +15,7 @@ title:  'Part 3: Single cell genome assembly using SPAdes'
 <p>
 In this part of the course, you will start doing assemblies of 'real' (but reduced) single cell genome datasets. We will compare two single cell specific assemblers, namely Spades and IDBA-UD, and one 'general-purpose' assembler called Ray (which were introduced during the morning). The idea is that you will be able to compare the results of these different assemblers on two kinds of datasets (HiSeq and MiSeq), as well as different pre-treatments ('trimming'). You will also have a chance to explore how to decide which assembly is the best ('assembly metrics'), as there is no simple answer to this question.  
 Out of the total 12 assemblies we like you to compare, we suggest :  
+
 - Talk to each other to form a group of maximum 4 persons  
 - Pick a group numer and write your name in the corresponding spreadsheet (see below)  
 - split the work, optimally one person does only 3 assemblies on one of the datasets and pre-treatments (1 table in the spreadsheet)  
